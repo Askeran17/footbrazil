@@ -20,5 +20,6 @@ from multimedia_portal import views as multimedia_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
     path("multimedia_portal/", multimedia_views.my_portal, name='portal'),
 ]
