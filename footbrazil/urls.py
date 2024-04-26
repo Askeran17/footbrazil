@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from multimedia_portal import views as multimedia_views
+from portal import views as portal_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path("multimedia_portal/", multimedia_views.my_portal, name='portal'),
+    path("portal/", portal_views.my_portal, name='portal'),
 ]

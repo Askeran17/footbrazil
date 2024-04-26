@@ -9,6 +9,3 @@ class PostAdmin(SummernoteModelAdmin):
     search_fields = ['title']
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('description',)
-
-
-
