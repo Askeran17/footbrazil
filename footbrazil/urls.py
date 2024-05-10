@@ -21,5 +21,5 @@ from portal import views as portal_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path("portal/", portal_views.my_portal, name='portal'),
+    path('', include('portal.urls')),
 ]

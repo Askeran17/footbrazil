@@ -9,5 +9,5 @@ class PostView(View):
     '''show posts'''
     def get(self, request):
         posts = Post.objects.all()
-        return render(request, 'templates/base.html', {'post_list': posts})
+        return render(request, 'portal/index.html', {'post_list': posts})
         paginate_by = 6
