@@ -11,6 +11,7 @@ class Post(models.Model):
     slug = models.SlugField(max_length=300, unique=True)
     featured_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(default='')
+    summary = models.TextField(blank=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
