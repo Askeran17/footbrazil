@@ -22,3 +22,16 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
+class Comment(models.Model):
+    """
+    Model class for comments in app
+    """
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    text_comments = models.TextField('Texts field', max_length=2000)
+
+    def __str__(self):
+        return f"Comment {self.text_comments} by {self.author}"    
