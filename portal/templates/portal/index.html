@@ -15,12 +15,14 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}"
                                                                     alt="{{ post.title }}">
                                 
                                 <div class="image-flash">
                                 </div>
                             </div>
+                        
                             <a href="{{ post.slug }}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.summary }}</p>

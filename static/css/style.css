@@ -2,6 +2,11 @@ body {
     background-color: #F9FAFC;
 }
 
+.footbrazil-bg {
+background: url("https://static0.givemesportimages.com/wordpress/wp-content/uploads/2024/01/brazil-s-greatest-ever-footballers-ranked.jpg") no-repeat center /cover;
+position: relative;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
