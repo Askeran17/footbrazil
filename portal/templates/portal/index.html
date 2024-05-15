@@ -12,7 +12,7 @@
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 text-center">
                         <div class="card-body">
                             <div class="image-container">
                                 
@@ -26,6 +26,7 @@
                             <a href="{{ post.slug }}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.summary }}</p>
+                                <button type="button" class="btn btn-primary">Click to watch</button>
                             </a>
 
                             <hr />
