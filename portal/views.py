@@ -32,7 +32,7 @@ class PostDetail(View):
 
         return render(request, 'portal/full_post.html', {'post': post, 'comment_form': comment_form})
 
-def comment_delete(request, slug, comment_id):
+def comments_delete(request, slug, comment_id):
     """
     view to delete comment
     """
@@ -46,4 +46,25 @@ def comment_delete(request, slug, comment_id):
     else:
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
+    return redirect(reverse('full_post', args=[slug]))
+
+def comments_edit(request, slug, comment_id):
+    """
+    edit comments
+    """
+    post = get_object_or_404(Post, id=pk, author=request.user)
+    comment_form = PostEditForm(instance=post)
+    
+    if request.method == "POST":
+        queryset = Post.objects.filter()
+        post = get_object_or_404(queryset, slug=slug)
+        comment = get_object_or_404(Comment, pk=comment_id)
+        comment_form = CommentForm(data=request.POST, instance=comment)
+        if comment_form.is_valid() and comment.author == request.user:
+            comment_form.save()
+            messages.success(request, 'Post updated')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            
+    
     return redirect(reverse('full_post', args=[slug]))

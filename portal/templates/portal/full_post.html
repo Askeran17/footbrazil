@@ -59,7 +59,7 @@
           {% else %}
           <h3>Add a comment</h3>
           <form method="post" style="margin-top: 1.3em;">
-            {{ comment_form.as_p }}
+            {{ comment_form | crispy }}
             {% csrf_token %}
             <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
           </form>
@@ -70,3 +70,6 @@
   </div>
 
 {% endblock content %}
+{% block extras %}
+<script src="{% static 'js/comments.js' %}"></script>
+{% endblock %}
