@@ -39,6 +39,10 @@ position: relative;
     background-color: transparent;
 }
 
+.card-footbrazil {
+    background-color: #f0f0f0;
+}
+
 .image-container {
     position: relative;
 }
