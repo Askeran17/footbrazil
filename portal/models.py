@@ -29,6 +29,8 @@ class Comment(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="commenter")
     text_comments = models.TextField('Texts field', max_length=2000)
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Comment {self.text_comments} by {self.author}"    

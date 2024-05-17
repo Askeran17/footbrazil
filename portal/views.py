@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.http import HttpResponse
+from django.contrib import messages
 from django.views.generic.base import View
 from .forms import CommentForm
-from .models import Post
+from .models import Post, Comment
 
 # Create your views here.
 
@@ -13,30 +14,76 @@ class PostView(View):
         return render(request, 'portal/index.html', {'post_list': posts})
         paginate_by = 6
 
-class PostDetail(View):
-    '''full detailed posts'''
-    def get(self, request, slug):
-        post = Post.objects.get(slug=slug)
+def full_post(request, slug):
+    """
+    Display an individual :model:`blog.Post`.
 
-        if request.method == "POST":
-            comment_form = CommentForm(request.POST)
-            if comment_form.is_valid():
-                comment = comment_form.save(commit=False)
-                comment.author = request.user
-                comment.post = post
-                comment.save()
+    **Context**
 
-                return redirect('full_post', slug=post.slug)
+    ``post``
+        An instance of :model:`blog.Post`.
+
+    **Template:**
+
+    :template:`portal/full_post.html`
+    """
+
+    queryset = Post.objects.all()
+    post = get_object_or_404(queryset, slug=slug)
+    comments = post.comments.filter(approved=True).order_by("-created_on")
+    comment_count = post.comments.filter(approved=True).count()
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.author = request.user
+            comment.post = post
+            comment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment submitted and awaiting approval'
+    )
+
+    comment_form = CommentForm()
+
+    return render(
+        request,
+        "portal/full_post.html",
+        {"post": post,
+        "comments": comments,
+        "comment_count": comment_count,
+        "comment_form": comment_form,
+        },
+    )
+
+def comment_edit(request, slug, comment_id):
+    """
+    view to edit comments
+    """
+    if request.method == "POST":
+
+        queryset = Post.objects.all()
+        post = get_object_or_404(queryset, slug=slug)
+        comment = get_object_or_404(Comment, pk=comment_id)
+        comment_form = CommentForm(data=request.POST, instance=comment)
+
+        if comment_form.is_valid() and comment.author == request.user:
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.approved = False
+            comment.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            comment_form = CommentForm()
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
-        return render(request, 'portal/full_post.html', {'post': post, 'comment_form': comment_form})
+    return redirect(reverse('full_post', args=[slug]))
 
-def comments_delete(request, slug, comment_id):
+
+def comment_delete(request, slug, comment_id):
     """
     view to delete comment
     """
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.all()
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
@@ -46,25 +93,4 @@ def comments_delete(request, slug, comment_id):
     else:
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
-    return redirect(reverse('full_post', args=[slug]))
-
-def comments_edit(request, slug, comment_id):
-    """
-    edit comments
-    """
-    post = get_object_or_404(Post, id=pk, author=request.user)
-    comment_form = PostEditForm(instance=post)
-    
-    if request.method == "POST":
-        queryset = Post.objects.filter()
-        post = get_object_or_404(queryset, slug=slug)
-        comment = get_object_or_404(Comment, pk=comment_id)
-        comment_form = CommentForm(data=request.POST, instance=comment)
-        if comment_form.is_valid() and comment.author == request.user:
-            comment_form.save()
-            messages.success(request, 'Post updated')
-        else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
-            
-    
     return redirect(reverse('full_post', args=[slug]))
