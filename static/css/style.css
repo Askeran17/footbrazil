@@ -7,7 +7,7 @@ body {
 
 .front-page-text {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .footbrazil-bg {
@@ -175,4 +175,21 @@ position: relative;
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+@media screen and (min-width: 1024px) {
+.masthead {
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 73vh;
+    width: 100%;
+}
+
+.footbrazil-bg {
+    background-size: cover;
+    background-position-y: top;
+    }
+
 }
