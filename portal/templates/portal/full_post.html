@@ -9,9 +9,9 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }}</p>
+                <p class="post-subtitle">Author: {{ post.author }}</p>
                 <hr />
-                            <p class="card-text text-muted h6">
+                            <p class="post-subtitle">
                               {{ post.date}}
                             </p>
             </div>
@@ -49,9 +49,10 @@
                 {{ comment.created_on }}
               </span> wrote:
             
-            </p>
+            </p><div id="comment{{ comment.id }}">
             {{ comment.text_comments | linebreaks }}
           </div>
+        </div>
           {% if not comment.approved and comment.author == user %}
           <div class="alert alert-success" role="alert">
             Your comment is awaiting moderation
@@ -70,10 +71,10 @@
         {% if user.is_authenticated %}
           <h3>Add a comment</h3>
           <p>Posting as: {{ user.username }}</p>
-          <form method="post" style="margin-top: 1.3em;">
+          <form id="commentForm" method="post" style="margin-top: 1.3em;">
             {{ comment_form | crispy }}
             {% csrf_token %}
-            <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+            <button id="submitButton" type="submit" class="btn btn-primary  btn-lg">Submit</button>
           </form>
           
           {% else %}
