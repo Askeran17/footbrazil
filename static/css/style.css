@@ -1,5 +1,12 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     background-color: #F9FAFC;
+}
+
+.front-page-text {
+    font-family: 'EB Garamond', sans-serif;
 }
 
 .footbrazil-bg {
