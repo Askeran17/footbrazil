@@ -47,6 +47,11 @@ position: relative;
     background-color: transparent;
 }
 
+.card-text {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
 .card-footbrazil {
     background-color: #f0f0f0;
 }
@@ -177,8 +182,36 @@ position: relative;
     color: rgb(222, 146, 168);
 }
 
+.navbar-nav { 
+    margin-left: auto; 
+} 
+
+/* Small devices (phones, 335px and up) */
+@media only screen and (min-width: 335px) {
+    .masthead-home {
+        height: 25vh;
+        width: 100%;
+    }
+
+    .text-footbrazil-bg {
+    font-size: 5px;
+}
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    .masthead-home {
+        height: 33vh;
+        width: 100%;
+    }
+
+    .text-footbrazil-bg {
+        font-size: 10px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
-.masthead {
+.masthead-home {
     margin-top: 0px;
     overflow: hidden;
     position: relative;
@@ -191,5 +224,9 @@ position: relative;
     background-size: cover;
     background-position-y: top;
     }
+
+.text-footbrazil-bg {
+    font-size: 30px;
+}
 
 }
