@@ -182,6 +182,7 @@ position: relative;
     color: rgb(222, 146, 168);
 }
 
+/* button link navbar */
 .nav { 
     margin-left: auto; 
 } 
@@ -199,8 +200,6 @@ position: relative;
 
 .nav-link.active {color: #010101}
 
-
-/* button link navbar */
 .button-navbar-footbrazil {
     padding: 5px 5px;
     font-size: 14px;

@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
+from django.http import Http404
 from django.contrib import messages
 from django.views.generic.base import View
 from .forms import CommentForm
@@ -13,6 +14,9 @@ class PostView(View):
         posts = Post.objects.all()
         return render(request, 'portal/index.html', {'post_list': posts})
         paginate_by = 6
+
+def view_404(request, exception):
+      return render(request, '404.html')
 
 def full_post(request, slug):
     """

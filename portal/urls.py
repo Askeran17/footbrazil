@@ -1,6 +1,7 @@
 from django.urls import path, include
 from . import views
 
+
 urlpatterns = [
     path("", views.PostView.as_view(), name='home'),
     path("accounts/", include("allauth.urls")),
@@ -10,3 +11,5 @@ urlpatterns = [
     path('<slug:slug>/delete_comment/<int:comment_id>',
          views.comment_delete, name='comment_delete'),
 ]
+
+handler404 = 'portal.views.view_404'

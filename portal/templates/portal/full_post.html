@@ -53,10 +53,6 @@
             {{ comment.text_comments | linebreaks }}
           </div>
         </div>
-          {% if not comment.approved and comment.author == user %}
-          <div class="alert alert-success" role="alert">
-            Your comment is awaiting moderation
-            {% endif %}
           {% if user.is_authenticated and comment.author == user %}
           <button class="btn btn-delete"
             comment_id="{{ comment.id }}">Delete</button>
@@ -76,7 +72,6 @@
             {% csrf_token %}
             <button id="submitButton" type="submit" class="btn btn-primary  btn-lg">Submit</button>
           </form>
-          
           {% else %}
           <p>Log in to leave a comment</p>
           {% endif %}
