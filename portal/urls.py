@@ -4,6 +4,8 @@ from . import views
 
 urlpatterns = [
     path("", views.PostView.as_view(), name='home'),
+    path("history/", views.history, name='history'),
+    path("about/", views.about, name='about'),
     path("accounts/", include("allauth.urls")),
     path('<slug:slug>/', views.full_post, name='full_post'),
     path('<slug:slug>/edit_comment/<int:comment_id>',

@@ -1,12 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import HttpResponse, HttpResponseNotFound
-from django.http import Http404
+from django.http import HttpResponse
 from django.contrib import messages
 from django.views.generic.base import View
 from .forms import CommentForm
 from .models import Post, Comment
 
-# Create your views here.
+# App views
 
 class PostView(View):
     '''show posts'''
@@ -14,6 +13,12 @@ class PostView(View):
         posts = Post.objects.all()
         return render(request, 'portal/index.html', {'post_list': posts})
         paginate_by = 6
+
+def history(request):
+    return render (request, 'portal/history.html')
+
+def about(request):
+    return render (request, 'portal/about.html')
 
 def view_404(request, exception):
       return render(request, '404.html')
@@ -98,3 +103,4 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return redirect(reverse('full_post', args=[slug]))
+
