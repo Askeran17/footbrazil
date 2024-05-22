@@ -15,7 +15,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    date = models.DateField('Publication date') 
+    date = models.DateField('Publication date')
 
     def __str__(self):
         return self.title
