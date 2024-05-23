@@ -8,14 +8,19 @@
     <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="text-center">
-                        <h1 class="text-footbrazil-bg">Feel the atmosphere of Brazilian football here!</h1>
+                <div class="col-lg-8 animate__animated animate__bounce text-white welcome-bg">
+                    <h1>Welcome to FootBrazil</h1>
+                    <h2>Feel football atmosphere here</h2>
+        
+                    <div class="go-posts">
+                        <a href="{% url 'home' %}#posts" class="btn-posts">Go to posts</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <br>
@@ -23,7 +28,7 @@
     <div class="row">
         
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div id="posts" class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
@@ -41,8 +46,8 @@
                             
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.summary }}</p>
-                                <a href="{{ post.slug }}" class="post-link">
-                                <button type="button" class="btn btn-primary">Click to read</button>
+                                <a href="{{ post.slug }}" class="post-link bg-press-footbrazil">
+                                Click to read
                             </a>
                         </div>
                     </div>

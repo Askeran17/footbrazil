@@ -15,10 +15,10 @@ class PostView(View):
         paginate_by = 6
 
 def history(request):
-    return render (request, 'portal/history.html')
+    return render(request, 'portal/history.html')
 
 def about(request):
-    return render (request, 'portal/about.html')
+    return render(request, 'portal/about.html')
 
 def view_404(request, exception):
       return render(request, '404.html')
