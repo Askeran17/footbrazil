@@ -6,8 +6,7 @@ body {
 }
 
 .front-page-text {
-    font-family: 'Crimson Text', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Exo', sans-serif;
 }
 
 .footbrazil-bg {
@@ -31,7 +30,7 @@ font-weight: 500;
     text-transform: uppercase;
     display: inline-block;
     padding: 10px;
-    margin-inline: auto;
+    margin-left: -15px;
     transition: 0.3s;
     line-height: 1;
     text-decoration: none;
@@ -101,6 +100,9 @@ font-weight: 500;
     font-family: 'Exo', sans-serif;
 }
 
+.full-post-text {
+    font-family: 'Exo', sans-serif;
+}
 
 .card-footbrazil {
     background-color: #f0f0f0;
@@ -415,13 +417,18 @@ font-weight: 500;
     display: table-cell;
 }
 
-.text-color-infopage {
+.info-column {
     color: #fafafa;
 }
 
 
+
 /* Small devices (phones, 335px and up) */
 @media only screen and (min-width: 335px) {
+
+    .masthead {
+        margin-bottom: -100px;
+    }
 
     .masthead-home {
         height: 25vh;
@@ -440,6 +447,11 @@ font-weight: 500;
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    
+    .masthead {
+        margin-bottom: -150px;
+    }
+    
     .masthead-home {
         height: 33vh;
         width: 100%;
@@ -456,6 +468,11 @@ font-weight: 500;
 }
 
 @media screen and (min-width: 1024px) {
+
+.masthead {
+        margin-bottom: -10px;
+    }
+
 .masthead-home {
     margin-top: 0px;
     overflow: hidden;
@@ -478,5 +495,8 @@ font-weight: 500;
     top: 300px;
 }
 
+.info-column {
+    height: 463px;
+}
 
 }
