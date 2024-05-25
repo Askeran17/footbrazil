@@ -12,6 +12,8 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     description = models.TextField(default='')
     summary = models.TextField(blank=True)
+    sponsor = models.CharField(default='Embratel')
+    has_sponsor = models.BooleanField(default=False)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
