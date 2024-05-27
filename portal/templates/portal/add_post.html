@@ -4,14 +4,22 @@
 
 {% block content %}
 
-<h1>Add Post here</h1>
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left top">
+            
+<h1>Add Post</h1>
 <form method="POST">
 {% csrf_token %}
-{{ form.as_p}}
-<button id="submitButton" type="submit" class="btn btn-primary  btn-lg">Post</button>
+{{ form.as_p }}
+<button id="submitButton" type="submit" class="btn btn-primary btn-lg">Post</button>
 
 
 </form>
+
+</div>
+</div>
+</div>
                 
 <!-- index.html content ends here -->
 

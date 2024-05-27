@@ -465,7 +465,17 @@ font-weight: 500;
         top: 200px;
     }
 
+   .p-text-history {
+    font-size: 0.83rem;
+    }
+
+    .img-cup {
+        position: relative;
+        left: -60px;
+        }
+
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -499,4 +509,22 @@ font-weight: 500;
     height: 463px;
 }
 
+.p-text-history {
+    font-size: 0.91rem;
+    }
+
 }
+
+@media screen and (min-width: 1200px) { 
+
+    .p-text-history {
+        font-size: 1rem;
+        }
+
+        .img-cup {
+            position: relative;
+            left: -1px;
+            }
+    
+}
+
