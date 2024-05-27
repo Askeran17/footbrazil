@@ -3,6 +3,7 @@
 {% url 'home' as home_url %}
 {% url 'history' as history_url %}
 {% url 'about' as about_url %}
+{% url 'add_post' as add_post %}
 
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
@@ -67,6 +68,13 @@
                         <a class="nav-link {% if request.path == about_url %}active{% endif %} navbar-link-footbrazil" aria-current="page"
                             href="{% url 'about' %}">About </a>
                     </li>
+
+                    {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == add_post %}active{% endif %} navbar-link-footbrazil" aria-current="page"
+                            href="{% url 'add_post' %}">Add post </a>
+                    </li>
+                    {% endif %}
 
                     {% if user.is_authenticated %}
                     <li class="nav-item">

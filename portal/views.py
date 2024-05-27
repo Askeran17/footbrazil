@@ -1,13 +1,14 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.http import HttpResponse
 from django.contrib import messages
-from django.views.generic.base import View
+from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import UserPassesTestMixin
 from .forms import CommentForm
 from .models import Post, Comment
 
 # App views
 
-class PostView(View):
+class PostView(CreateView):
     '''show posts'''
     def get(self, request):
         posts = Post.objects.all()
@@ -104,3 +105,10 @@ def comment_delete(request, slug, comment_id):
 
     return redirect(reverse('full_post', args=[slug]))
 
+class AddPostView(UserPassesTestMixin, CreateView):
+    model = Post
+    template_name = 'portal/add_post.html'
+    fields = '__all__'
+
+    def test_func(self):
+        return self.request.user.is_superuser
