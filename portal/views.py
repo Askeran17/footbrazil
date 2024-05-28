@@ -3,8 +3,10 @@ from django.http import HttpResponse
 from django.contrib import messages
 from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import UserPassesTestMixin
+from django.urls import reverse_lazy
 from .forms import CommentForm
 from .models import Post, Comment
+
 
 # App views
 
@@ -106,9 +108,11 @@ def comment_delete(request, slug, comment_id):
     return redirect(reverse('full_post', args=[slug]))
 
 class AddPostView(UserPassesTestMixin, CreateView):
+    '''add post in frontend'''
     model = Post
     template_name = 'portal/add_post.html'
     fields = '__all__'
+    success_url = reverse_lazy("add_post")
 
     def test_func(self):
         return self.request.user.is_superuser

@@ -1,19 +1,16 @@
-{% extends "base.html" %}
-
+{% extends 'base.html' %} {% block content %}
 {% load static %}
-
-{% block content %}
+{% load crispy_forms_tags %}
 
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left top">
-            
+
 <h1>Add Post</h1>
 <form method="POST">
 {% csrf_token %}
-{{ form.as_p }}
+{{ form | crispy }}
 <button id="submitButton" type="submit" class="btn btn-primary btn-lg">Post</button>
-
 
 </form>
 
