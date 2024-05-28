@@ -32,7 +32,7 @@
                 <p class="card-text">
                     {{ post.description | safe }}
                 </p>
-                {% if has_sponsor == true %}
+                {% if post.has_sponsor %}
                 <p class="post-subtitle"> Sponsored by:
                   {{ post.sponsor}}
                 </p>

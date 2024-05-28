@@ -474,9 +474,26 @@ font-weight: 500;
         left: -60px;
         }
 
+    .add-post-form-view {
+        width: 50%;
+        position: relative;
+        left: 175px;
+        }
+
 }
 
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
 
+    .add-post-form-view {
+        width: 50%;
+        position: relative;
+        left: 220px;
+        }
+
+}
+
+/* Large devices (laptops and desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {
 
 .masthead {
@@ -513,8 +530,15 @@ font-weight: 500;
     font-size: 0.91rem;
     }
 
+.add-post-form-view {
+    width: 50%;
+    position: relative;
+    left: 230px;
+    }
+
 }
 
+/* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
 
     .p-text-history {
@@ -525,6 +549,12 @@ font-weight: 500;
             position: relative;
             left: -1px;
             }
+    
+            .add-post-form-view {
+                width: 50%;
+                position: relative;
+                left: 320px;
+                }
     
 }
 
