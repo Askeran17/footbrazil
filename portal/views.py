@@ -13,7 +13,7 @@ from .models import Post, Comment
 class PostView(CreateView):
     '''show posts'''
     def get(self, request):
-        posts = Post.objects.all()
+        posts = Post.objects.filter(status=1)
         return render(request, 'portal/index.html', {'post_list': posts})
         paginate_by = 6
 
@@ -40,7 +40,7 @@ def full_post(request, slug):
     :template:`portal/full_post.html`
     """
 
-    queryset = Post.objects.all()
+    queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.filter(approved=True).order_by("-created_on")
     comment_count = post.comments.filter(approved=True).count()
@@ -74,7 +74,7 @@ def comment_edit(request, slug, comment_id):
     """
     if request.method == "POST":
 
-        queryset = Post.objects.all()
+        queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
         comment_form = CommentForm(data=request.POST, instance=comment)
@@ -95,7 +95,7 @@ def comment_delete(request, slug, comment_id):
     """
     view to delete comment
     """
-    queryset = Post.objects.all()
+    queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
@@ -107,12 +107,25 @@ def comment_delete(request, slug, comment_id):
 
     return redirect(reverse('full_post', args=[slug]))
 
-class AddPostView(UserPassesTestMixin, CreateView):
+class AddPostView(CreateView):
     '''add post from the website itself'''
     model = Post
     template_name = 'portal/add_post.html'
     fields = '__all__'
     success_url = reverse_lazy("add_post")
 
-    def test_func(self):
-        return self.request.user.is_superuser
+    def add_post_portal (self, request):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+
+        if request.method == "POST":
+            add_post_form = AddPostForm(data=request.POST)
+            if add_post_form.is_valid() and create_post.author == request.user.is_superuser:
+                create_post.post = post
+                create_post.is_published = 1
+                create_post.save()
+                messages.add_message(request, messages.SUCCESS, 'Post added!')
+            else:
+                messages.add_message(request, messages.ERROR, 'Error adding!')
+
+        return redirect(reverse('add_post', args=[slug]))

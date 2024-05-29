@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+STATUS = ((0, "Draft"), (1, "Published"))
+
 # Models for app
 class Post(models.Model):
     """
@@ -9,11 +11,12 @@ class Post(models.Model):
     """
     title = models.CharField(max_length=300, unique=True)
     slug = models.SlugField(max_length=300, unique=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField('image', default='dfy0one9z')
     description = models.TextField(default='')
     summary = models.TextField(blank=True)
     sponsor = models.CharField(default='Embratel')
     has_sponsor = models.BooleanField(default=False)
+    status = models.IntegerField(choices=STATUS, default=0)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
