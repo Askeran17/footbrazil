@@ -1,39 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center"> FootBrazil - football portal of the Brazilian national team</h1>
 
-Welcome,
+<img src="#" ><br>
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Live Site
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+- ![Heroku](https://footbrazil-a7d96ef49755.herokuapp.com/)
 
-## Codeanywhere Reminders
+### Repository
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- ![Github](www.github.com)
 
 ---
 
-Happy coding!
+## [Content](#content)
+
+- [Overview](#overview)
+- [User Experience (UX)](#user-experience-ux)
+  - [Project goal](#project-goal)
+  - [User Stories](#user-stories)
+  - [Agile Methodology](#agile-methodology)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Database Schema](#database-schema)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Frameworks](#frameworks)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Deploy on heroku](#deploy-on-heroku)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
+
+## Overview
+
+This site is dedicated to the history of Brazilian football, namely the participation of the Brazilian national team in the World Cup. On this site you will find statistics on the performance of the Brazilian national team at the World Championships, a brief historical excursion and review articles on the famous periods of participation of the Brazilian national team at the World Championships where in each post there will be an article, as well as a video review and under these posts each participant will be able to leave a comment and share impressions and memories.
+
+FootBrazil - was developed using HTML, CSS, Javascript and Python (Django).
+
+## User Experience
+
+### Project goal
+
+The purpose of the site is to provide, with the help of web development, visitors the opportunity to easily immerse themselves in the atmosphere of the Brazilian national team and its participation in the World Cup.
+
+### User Stories
+
+
+### Agile methodology
+
+This project was developed using the agile methodology. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story.
+
+Visitors can read posts and view video but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments.
+
+### Design
+
+
+
+
+### Wireframes
+The wireframes for desktop and mobile were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here](/)<br>
+
+### Database Schema
+The project uses the relational database PostgreSQL to store the data.
+
+
+<details>
+<summary>Schema</summary>
+<img src="#" ><br>
+</details>

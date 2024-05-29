@@ -108,7 +108,7 @@ def comment_delete(request, slug, comment_id):
     return redirect(reverse('full_post', args=[slug]))
 
 class AddPostView(UserPassesTestMixin, CreateView):
-    '''add post in frontend'''
+    '''add post from the website itself'''
     model = Post
     template_name = 'portal/add_post.html'
     fields = '__all__'
