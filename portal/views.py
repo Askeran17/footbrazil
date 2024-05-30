@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.urls import reverse_lazy
-from .forms import CommentForm
+from .forms import CommentForm, AddPostForm
 from .models import Post, Comment
 
 
@@ -74,7 +74,7 @@ def comment_edit(request, slug, comment_id):
     """
     if request.method == "POST":
 
-        queryset = Post.objects.filter(status=1)
+        queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
         comment_form = CommentForm(data=request.POST, instance=comment)
@@ -95,7 +95,7 @@ def comment_delete(request, slug, comment_id):
     """
     view to delete comment
     """
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.all()
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
@@ -111,21 +111,25 @@ class AddPostView(CreateView):
     '''add post from the website itself'''
     model = Post
     template_name = 'portal/add_post.html'
-    fields = '__all__'
     success_url = reverse_lazy("add_post")
+    form = AddPostForm
 
-    def add_post_portal (self, request):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
+    def get (self, request, *args, **kwargs):
+        return render(request, self.template_name, {
+            "form" : self.form,
+        })
 
-        if request.method == "POST":
-            add_post_form = AddPostForm(data=request.POST)
-            if add_post_form.is_valid() and create_post.author == request.user.is_superuser:
-                create_post.post = post
-                create_post.is_published = 1
-                create_post.save()
-                messages.add_message(request, messages.SUCCESS, 'Post added!')
+    def post (self, request, *args, **kwargs):
+        new_post_form = AddPostForm(request.POST, request.FILES)
+        if new_post_form.is_valid():
+            new_post = new_post_form.save(commit=False)
+            new_post.author = request.user
+            if request.user.is_superuser:
+                new_post.status = 1
+                new_post.save()
+                messages.add_message(request, messages.SUCCESS, "Your post was added")
             else:
-                messages.add_message(request, messages.ERROR, 'Error adding!')
-
-        return redirect(reverse('add_post', args=[slug]))
+                messages.add_message(request, messages.ERROR, "Error adding post")
+        else:
+            new_post = self.form
+        return redirect('home')
