@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.http import HttpResponse
 from django.contrib import messages
 from django.views.generic.edit import CreateView
-from django.contrib.auth.mixins import UserPassesTestMixin
 from django.urls import reverse_lazy
 from .forms import CommentForm, AddPostForm
 from .models import Post, Comment
@@ -106,6 +105,7 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return redirect(reverse('full_post', args=[slug]))
+
 
 class AddPostView(CreateView):
     '''add post from the website itself'''
