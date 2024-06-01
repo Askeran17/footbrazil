@@ -69,6 +69,8 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 
 -  In order for the site to blend beautifully with the text, two text styles were used:
 
+<br>
+
 "Jersey 10" - was used for the main page as a welcome message, which goes well with the main image of the site.
 
 ![image](/static/images/readme-img/jersey-10-font.png)
@@ -109,13 +111,13 @@ Deployed using Heroku.
 #### How to Fork
 Fork the repository:<br>
 	1. Log in/sign up to GitHub.
- 	2. Go to the repository for this project [pp4-blog](https://github.com/Askeran17/footbrazil).
+ 	2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
 	3. Click the 'Fork' button in the top right corner.
 
 #### How to Clone
 Clone the repository:<br>
 	1. Log in/sign up to GitHub.
- 	2. Go to the repository for this project [pp4-blog](https://github.com/Askeran17/footbrazil).
+ 	2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
 	3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
  	4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
 	5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
