@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import HttpResponse
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin,
+    UserPassesTestMixin,
+)
 from django.contrib import messages
 from django.views.generic.edit import CreateView
-from django.urls import reverse_lazy
 from .forms import CommentForm, AddPostForm
 from .models import Post, Comment
 
@@ -107,12 +109,15 @@ def comment_delete(request, slug, comment_id):
     return redirect(reverse('full_post', args=[slug]))
 
 
-class AddPostView(CreateView):
+class AddPostView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     '''add post from the website itself'''
     model = Post
     template_name = 'portal/add_post.html'
-    success_url = reverse_lazy("add_post")
     form = AddPostForm
+
+    def test_func(self):
+        '''Test function to ensure user is admin'''
+        return self.request.user.is_superuser
 
     def get (self, request, *args, **kwargs):
         return render(request, self.template_name, {
@@ -124,12 +129,10 @@ class AddPostView(CreateView):
         if new_post_form.is_valid():
             new_post = new_post_form.save(commit=False)
             new_post.author = request.user
-            if request.user.is_superuser:
-                new_post.status = 1
-                new_post.save()
-                messages.add_message(request, messages.SUCCESS, "Your post was added")
-            else:
-                messages.add_message(request, messages.ERROR, "Error adding post")
+            new_post.status = 1
+            new_post.save()
+            messages.add_message(request, messages.SUCCESS, "Your post was added")
         else:
             new_post = self.form
+            messages.add_message(request, messages.ERROR, "Error adding post")
         return redirect('home')

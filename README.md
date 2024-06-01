@@ -1,6 +1,6 @@
 <h1 align="center"> FootBrazil - football portal of the Brazilian national team</h1>
 
-<img src="#" ><br>
+![image](/static/images/readme-img/background-home-page.png)
 
 ### Live Site
 
@@ -57,7 +57,25 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 
 ### Design
 
+- The design of the website should be combined with the theme, and since the theme of the site is the Brazilian national football team, the design of the website is focused on the combination of the colors of the Brazilian national team.
 
+#### Colours
+
+- The color scheme predominantly consists of a variety of greys, greens, whites and blues. The use of gray and dark white creates a background tone, while the green is refreshing and correlates with one of the colors of the Brazilian flag, which matches the theme of the website. The blue color brightens up dark colors and, like green, is part of the Brazilian flag. The black color clearly indicates the bottom panel of the site.
+
+![image](/static/images/readme-img/colours-palette.jpg)
+
+#### Fonts
+
+-  In order for the site to blend beautifully with the text, two text styles were used:
+
+"Jersey 10" - was used for the main page as a welcome message, which goes well with the main image of the site.
+![image](/static/images/readme-img/jersey-10-font.png)
+
+"Exo" - was used as the main style of page texts.
+![image](/static/images/readme-img/exo-font.png)
+
+"Crimson Text" - this style took just in case, but I didn’t use it
 
 
 ### Wireframes
