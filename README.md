@@ -69,7 +69,6 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 
 -  In order for the site to blend beautifully with the text, two text styles were used:
 
-<br>
 
 "Jersey 10" - was used for the main page as a welcome message, which goes well with the main image of the site.
 
@@ -78,6 +77,9 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 <br>
 
 "Exo" - was used as the main style of page texts.
+
+<br>
+
 ![image](/static/images/readme-img/exo-font.png)
 
 "Crimson Text" - this style took just in case, but I didn’t use it
