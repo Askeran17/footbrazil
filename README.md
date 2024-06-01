@@ -4,7 +4,7 @@
 
 ### Live Site
 
-- Go to live site - [FootBrazil](https://askeran17.github.io/st-josephs-brotherhood/)
+- Go to live site - [FootBrazil](https://footbrazil-a7d96ef49755.herokuapp.com/)
 
 ### Repository
 
