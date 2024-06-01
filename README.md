@@ -12,7 +12,7 @@
 
 ---
 
-## [Content](#content)
+## [Contents](#contents)
 
 - [Overview](#overview)
 - [User Experience (UX)](#user-experience-ux)
@@ -23,16 +23,16 @@
     - [Wireframes](#wireframes)
     - [Database Schema](#database-schema)
 - [Features](#features)
+    - [Existing Features](#existing-features)
 - [Technologies Used](#technologies-used)
-  - [Languages](#languages)
-  - [Frameworks](#frameworks)
+  - [Languages Used](#languages-used)
+  - [Frameworks, Libraries & Programs Used](#frameworks)
 - [Testing](#testing)
 - [Deployment](#deployment)
-  - [Deploy on heroku](#deploy-on-heroku)
+  - [Deploy on Heroku](#deploy-on-heroku)
 - [Credits](#credits)
-  - [Code](#code)
+  - [Content](#content)
   - [Media](#media)
-  - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -53,7 +53,7 @@ The purpose of the site is to provide, with the help of web development, visitor
 
 This project was developed using the agile methodology. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story.
 
-Visitors can read posts and view video but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments.
+Visitors can read posts and view video but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments. When user stories were completed, they were moved from the To Do via Progress to Done list.
 
 ### Design
 
@@ -86,7 +86,9 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 
 
 ### Wireframes
-The wireframes for desktop and mobile were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here](/)<br>
+I used program "Balsamiq Wireframes" to draw a page layout.
+
+![image](/static/)
 
 ### Database Schema
 The project uses the relational database PostgreSQL to store the data.
@@ -96,6 +98,74 @@ The project uses the relational database PostgreSQL to store the data.
 <summary>Schema</summary>
 <img src="#" ><br>
 </details>
+
+## Features
+
+### Existing Features
+
+## Technologies Used
+
+In the beginning I did all the work in Codeanywhere, but after I switched to GitPod platform.
+
+### Languages Used
+
+HTML, CSS, JavaScript, Python, Django
+
+### Frameworks, Libraries & Programs Used
+
+* [Django](https://pypi.org/project/Django/4.2.11/) - To start project in Python.
+
+* [Bootstrap](https://getbootstrap.com/) - To create the front-end design.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - To use as IDE to commit and push the project to GitHub.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [IloveImg](https://www.iloveimg.com/) - To resize images.
+
+* [Convertio](https://convertio.co/) - To convert images to webp format.
+
+* [Favicon.io](https://favicon.io/) - To create favicon.
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
+
+* [Emojipedia](https://emojipedia.org/) - Emoji for history timeline.
+
+## Testing
+
+Throughout the development of the site, I used Google's developer tools to identify and fix any problems along the way.
+
+If something didn't work correctly, I also used Google's developer tools to tweak and fix the problem.
+
+I've thoroughly tested each page using Google Chrome's developer tools to ensure each page is responsive on a variety of screen sizes and devices.
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+### Desktop Results
+
+The site showed good scores.
+
+![Home](/static/)
+![Full post](/static/)
+![History](/static/)
+![About](/static/)
+
+### Mobile Results
+
+The site showed good scores.
+
+![Home](/static/)
+![Full post](/static/)
+![History](/static/)
+![About](/static/)
 
 ## Deployment
 
@@ -123,3 +193,18 @@ Clone the repository:<br>
 	3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
  	4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
 	5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
+
+
+## Credits
+
+I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie project at the Code Institute. So I partially took the code from each project.
+
+### Content 
+
+- All content for the site was written by myself.
+
+- The icons was taken from Font Awesome [Font Awesome](https://fontawesome.com/)
+
+### Media
+
+- The images in site I took from open source, i.e. google.
