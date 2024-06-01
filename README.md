@@ -4,11 +4,11 @@
 
 ### Live Site
 
-- ![Heroku](https://footbrazil-a7d96ef49755.herokuapp.com/)
+- Go to live site - [FootBrazil](https://askeran17.github.io/st-josephs-brotherhood/)
 
 ### Repository
 
-- ![Github](www.github.com)
+- Go to the repository for this project, [Repository-Footbrazil](https://github.com/Askeran17/footbrazil.git)
 
 ---
 
@@ -70,7 +70,10 @@ Visitors can read posts and view video but not to add a comment under this. Regi
 -  In order for the site to blend beautifully with the text, two text styles were used:
 
 "Jersey 10" - was used for the main page as a welcome message, which goes well with the main image of the site.
+
 ![image](/static/images/readme-img/jersey-10-font.png)
+
+<br>
 
 "Exo" - was used as the main style of page texts.
 ![image](/static/images/readme-img/exo-font.png)
@@ -89,3 +92,30 @@ The project uses the relational database PostgreSQL to store the data.
 <summary>Schema</summary>
 <img src="#" ><br>
 </details>
+
+## Deployment
+
+### Local Development
+
+Deployed using Heroku.
+
+1. Log in/sign up to Heroku.
+2. Go to your Heroku App and click on "Deploy".
+3. At section "Deployment method", click "GitHub" and connect your account with Heroku.
+4. When you're connected, search for the project you wanna connect the app to and click on it.
+5. Click "Deploy Branch".
+6. Your app will now be deployed to GitHub and when it's done you can click "Open App".
+
+#### How to Fork
+Fork the repository:<br>
+	1. Log in/sign up to GitHub.
+ 	2. Go to the repository for this project [pp4-blog](https://github.com/Askeran17/footbrazil).
+	3. Click the 'Fork' button in the top right corner.
+
+#### How to Clone
+Clone the repository:<br>
+	1. Log in/sign up to GitHub.
+ 	2. Go to the repository for this project [pp4-blog](https://github.com/Askeran17/footbrazil).
+	3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
+ 	4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
+	5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
