@@ -15,6 +15,7 @@
 ## [Contents](#contents)
 
 - [Overview](#overview)
+- [Adaptability](#adaptability)
 - [User Experience (UX)](#user-experience-ux)
   - [Project goal](#project-goal)
   - [User Stories](#user-stories)
@@ -39,6 +40,10 @@
 This site is dedicated to the history of Brazilian football, namely the participation of the Brazilian national team in the World Cup. On this site you will find statistics on the performance of the Brazilian national team at the World Championships, a brief historical excursion and review articles on the famous periods of participation of the Brazilian national team at the World Championships where in each post there will be an article, as well as a video review and under these posts each participant will be able to leave a comment and share impressions and memories.
 
 FootBrazil - was developed using HTML, CSS, Javascript and Python (Django).
+
+## Adaptability on a variety of screen sizes
+
+![The FootBrazil on a variety of screen sizes](/static/)
 
 ## User Experience
 
@@ -166,6 +171,25 @@ The site showed good scores.
 ![Full post](/static/)
 ![History](/static/)
 ![About](/static/)
+
+### Manual Testing
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/)
+
+- JAVASCRIPT
+  - No errors were returned when passing through the official [JSHint validator](https://jshint.com/)
+
+- PYTHON
+  - No errors were returned when passing through the ![PEP8 Validator](images/validator-pep8.png)
+
+### Unfixed Bugs
+
 
 ## Deployment
 
