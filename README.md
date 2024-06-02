@@ -99,7 +99,6 @@ I used program "Balsamiq Wireframes" to draw a page layout.
 The project uses the relational database PostgreSQL to store the data.
 
 
-
 ## Features
 
 ### Existing Features
@@ -146,16 +145,6 @@ If something didn't work correctly, I also used Google's developer tools to twea
 
 I've thoroughly tested each page using Google Chrome's developer tools to ensure each page is responsive on a variety of screen sizes and devices.
 
-### Manuel Testing
-
-I conducted manual testing to ensure the effectiveness and usability of the FootBrazil website.
-
-#### Homepage
-
-| Testing  | Steps | Expected Result | Grade |  
-| - | - | - | - |
-| Customer can view home page | Access the main page of the website | Being able to open and browse without errors | PASS |
-
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
@@ -178,7 +167,26 @@ The site showed good scores.
 ![History](/static/)
 ![About](/static/)
 
-### Manual Testing
+### Manuel Testing
+
+I conducted manual testing to ensure the effectiveness and usability of the FootBrazil website.
+
+#### Homepage
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Visitor can view home page | Access the main page of the website | Being able to open and browse without errors | PASS |
+| Visitor can click on all button in homepage | When hover over the button, the button darkens a little| Buttons works without errors | PASS |
+| Homepage displays posts | Navigation from background image to posts | Posts shows without errors | PASS |
+
+#### Detailed post page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Visitor can view detailed post page | Access to the post page after clicked on button "click to read" from homepage | Being able read text and watch on video without errors | PASS |
+| Registered user can leave a comment under post | Log in and leave a comment | Leave a comment without errors | PASS |
+| Comment appears after approval | Leave a comment and wait until admin approve it | Comment appears after approval without errors | PASS |
+
 
 ### Validator Testing 
 
