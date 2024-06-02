@@ -10,22 +10,24 @@ from .models import Post, Comment
 
 
 # App views
-
 class PostView(CreateView):
     '''show posts'''
     def get(self, request):
         posts = Post.objects.filter(status=1)
         return render(request, 'portal/index.html', {'post_list': posts})
-        paginate_by = 6
+
 
 def history(request):
     return render(request, 'portal/history.html')
 
+
 def about(request):
     return render(request, 'portal/about.html')
 
+
 def view_404(request, exception):
-      return render(request, '404.html')
+    return render(request, '404.html')
+
 
 def full_post(request, slug):
     """
@@ -54,8 +56,7 @@ def full_post(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Comment submitted and awaiting approval'
-    )
+                'Comment submitted and awaiting approval')
 
     comment_form = CommentForm()
 
@@ -63,11 +64,11 @@ def full_post(request, slug):
         request,
         "portal/full_post.html",
         {"post": post,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,
-        },
+            "comments": comments,
+            "comment_count": comment_count,
+            "comment_form": comment_form, },
     )
+
 
 def comment_edit(request, slug, comment_id):
     """
@@ -87,7 +88,7 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(request, messages.ERROR, 'Error updating!')
 
     return redirect(reverse('full_post', args=[slug]))
 
@@ -104,7 +105,7 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(request, messages.ERROR, 'Error delete!')
 
     return redirect(reverse('full_post', args=[slug]))
 
@@ -119,19 +120,19 @@ class AddPostView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
         '''Test function to ensure user is admin'''
         return self.request.user.is_superuser
 
-    def get (self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {
-            "form" : self.form,
+            "form": self.form,
         })
 
-    def post (self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         new_post_form = AddPostForm(request.POST, request.FILES)
         if new_post_form.is_valid():
             new_post = new_post_form.save(commit=False)
             new_post.author = request.user
             new_post.status = 1
             new_post.save()
-            messages.add_message(request, messages.SUCCESS, "Your post was added")
+            messages.add_message(request, messages.SUCCESS, "Post was added")
         else:
             new_post = self.form
             messages.add_message(request, messages.ERROR, "Error adding post")

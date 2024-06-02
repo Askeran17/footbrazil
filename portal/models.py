@@ -6,6 +6,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 # Models for app
 class Post(models.Model):
     """
@@ -32,6 +33,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Comment(models.Model):
     """
     Model class for comments in app
@@ -45,6 +47,6 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Comment {self.text_comments} by {self.author}"    
+        return f"Comment {self.text_comments} by {self.author}"
 
 

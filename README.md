@@ -99,10 +99,6 @@ I used program "Balsamiq Wireframes" to draw a page layout.
 The project uses the relational database PostgreSQL to store the data.
 
 
-<details>
-<summary>Schema</summary>
-<img src="#" ><br>
-</details>
 
 ## Features
 
@@ -149,6 +145,16 @@ Throughout the development of the site, I used Google's developer tools to ident
 If something didn't work correctly, I also used Google's developer tools to tweak and fix the problem.
 
 I've thoroughly tested each page using Google Chrome's developer tools to ensure each page is responsive on a variety of screen sizes and devices.
+
+### Manuel Testing
+
+I conducted manual testing to ensure the effectiveness and usability of the FootBrazil website.
+
+#### Homepage
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Customer can view home page | Access the main page of the website | Being able to open and browse without errors | PASS |
 
 ### Lighthouse
 

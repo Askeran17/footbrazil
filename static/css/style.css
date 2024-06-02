@@ -1,6 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Jersey+10&display=swap');
 
+/* General styles */
 body {
     background-color: #F9FAFC;
 }
@@ -24,7 +25,7 @@ right: 0;
 }
 
 .btn-posts {
-font-weight: 500;
+    font-weight: 500;
     font-size: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -261,7 +262,7 @@ font-weight: 500;
     color: rgb(222, 146, 168);
 }
 
-/* button link navbar */
+/* Button link navbar */
 .nav { 
     margin-left: auto; 
 } 
@@ -301,7 +302,7 @@ font-weight: 500;
   }
 
 
-/*--------------------------------------------Work History*/
+/* History page */
 
 .bg-color-work-history {
     background-color: #404040;
@@ -376,7 +377,7 @@ font-weight: 500;
     
 }
 
-/*--------------------------------------------Progress*/
+/* Progressbar in history page */
 
 .progress {
     position: relative;
@@ -397,7 +398,7 @@ font-weight: 500;
     margin: 40px 20px;
 }
 
-/*--------------------------------------------About*/
+/* About page */
 .about-heading {
     color: #fafafa;
     font-family: "Exo", sans-serif;
@@ -420,7 +421,6 @@ font-weight: 500;
 .info-column {
     color: #fafafa;
 }
-
 
 
 /* Small devices (phones, 335px and up) */
@@ -522,10 +522,6 @@ font-weight: 500;
     top: 300px;
 }
 
-.info-column {
-    height: 463px;
-}
-
 .p-text-history {
     font-size: 0.91rem;
     }
@@ -554,6 +550,10 @@ font-weight: 500;
                 width: 50%;
                 position: relative;
                 left: 320px;
+                }
+
+                .info-column {
+                    height: 480px;
                 }
     
 }
