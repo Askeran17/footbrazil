@@ -1,4 +1,4 @@
-<h1 align="center"> FootBrazil - football portal of the Brazilian national team</h1>
+<h1 align="center"> FootBrazil - portal of the Brazilian national team</h1>
 
 ![image](/static/images/readme-img/background-home-page.png)
 
@@ -59,6 +59,8 @@ The purpose of the site is to provide, with the help of web development, visitor
 This project was developed using the agile methodology. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story.
 
 Visitors can read posts and view video but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments. When user stories were completed, they were moved from the To Do via Progress to Done list.
+
+Here is link to Agile [User Stories](https://github.com/users/Askeran17/projects/5/views/1).
 
 ### Design
 
@@ -218,7 +220,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 | Testing  | Steps | Expected Result | Grade |  
 | - | - | - | - |
-| Social media link opens with new tab | Click on link "Facebook, Twitter, Instagram or Youtube" from footer | Visitor is directed to the | PASS |
+| Social media link opens with new tab | Click on link "Facebook, Twitter, Instagram or Youtube" from footer | Visitor is directed to the new window for selected socialmedia | PASS |
 
 #### Navbar
 
@@ -245,7 +247,18 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
   - No errors were returned when passing through the official [JSHint validator](https://jshint.com/)
 
 - PYTHON
-  - No errors were returned when passing through the ![PEP8 Validator](images/validator-pep8.png)
+  - No errors were returned when passing through the PEP8 Validator 
+
+  ![admin.py](/static/)
+  
+  ![models.py](/static/)
+
+  ![views.py](/static/)
+
+  ![urls.py](/static/)
+
+  ![forms.py](/static/)
+  
 
 ### Unfixed Bugs
 
