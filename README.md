@@ -187,6 +187,51 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 | Registered user can leave a comment under post | Log in and leave a comment | Leave a comment without errors | PASS |
 | Comment appears after approval | Leave a comment and wait until admin approve it | Comment appears after approval without errors | PASS |
 
+#### Add post page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Admin can add post from website itself | Access to the add post page after clicked on button "Add post" from navbar | Being able to fill out the fields, send it and post will be added on homepage directly | PASS |
+| Image uploading from add post page | Opportunity to have a field to upload image to post | Image appears without errors | PASS |
+| Sponsor appears | Opportunity to choose sponsor for post | Сheck the box below the post and after post creating it will appear sponsors name without errors | PASS |
+
+#### History page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Visitor can view history page | Access to the history page after clicked on button "History" from navbar | Being able read text without errors | PASS |
+
+#### About page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Visitor can view about page | Access to the about page after clicked on button "About" from navbar | Being able read text without errors | PASS |
+
+#### Registration 
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| User signup page | Click on button "Register" from navbar | Visitor is directed to the signup page | PASS |
+| Fill in the registration form with valid and unique user information | Click on button "Sign up" | Success full registration | PASS |
+
+#### Footer
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Social media link opens with new tab | Click on link "Facebook, Twitter, Instagram or Youtube" from footer | Visitor is directed to the | PASS |
+
+#### Navbar
+
+| Testing  | Steps | Expected Outcome | Grade |  
+| - | - | - | - |
+| Navbars link testing | Each link will be working correctly | The user can open any link to view the web page | PASS |
+
+#### Admin
+
+| Testing  | Steps | Expected Outcome | Grade |  
+| - | - | - | - |
+| Superusers features | Superuser will be able to create, delete and update | Superuser can create, delete and update content | PASS |
+
 
 ### Validator Testing 
 
@@ -220,17 +265,17 @@ Deployed using Heroku.
 
 #### How to Fork
 Fork the repository:<br>
-	1. Log in/sign up to GitHub.
- 	2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
-	3. Click the 'Fork' button in the top right corner.
+1. Log in/sign up to GitHub.
+2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
+3. Click the 'Fork' button in the top right corner.
 
 #### How to Clone
 Clone the repository:<br>
-	1. Log in/sign up to GitHub.
- 	2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
-	3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
- 	4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
-	5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
+1. Log in/sign up to GitHub.
+2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
+3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
+4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
+5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
 
 
 ## Credits
