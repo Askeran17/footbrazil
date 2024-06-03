@@ -85,16 +85,14 @@ Here is an example:
 ![image](/static/images/readme-img/jersey-10-font.png)
 
 <br>
-<strong> "Exo" </strong> - was used as the main style of page texts.
+<strong>"Exo"</strong> - was used as the main style of page texts.
 
 <br>
 Here is an example:
 
-<br>
-
 ![image](/static/images/readme-img/exo-font.png)
 
-"Crimson Text" - this style took just in case, but I didn’t use it
+<strong>"Crimson Text"</strong> - this style took just in case, but I didn’t use it
 
 
 ### Wireframes
