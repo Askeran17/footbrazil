@@ -43,7 +43,7 @@ FootBrazil - was developed using HTML, CSS, Javascript and Python (Django).
 
 ## Adaptability on a variety of screen sizes
 
-![The FootBrazil on a variety of screen sizes](/static/)
+![The FootBrazil on a variety of screen sizes](/static/images/readme-img/adaptability-size.png)
 
 ## User Experience
 
