@@ -76,14 +76,19 @@ Here is link to Agile [User Stories](https://github.com/users/Askeran17/projects
 
 -  In order for the site to blend beautifully with the text, two text styles were used:
 
+<br>
 
-"Jersey 10" - was used for the main page as a welcome message, which goes well with the main image of the site.
+<strong>"Jersey 10"</strong> - was used for the main page as a welcome message, which goes well with the main image of the site. 
+
+Here is an example:
 
 ![image](/static/images/readme-img/jersey-10-font.png)
 
 <br>
+<strong> "Exo" </strong> - was used as the main style of page texts.
 
-"Exo" - was used as the main style of page texts.
+<br>
+Here is an example:
 
 <br>
 
