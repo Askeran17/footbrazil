@@ -159,19 +159,33 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 The site showed good scores.
 
-![Home](/static/)
-![Full post](/static/)
-![History](/static/)
-![About](/static/)
+Home page
+![Home](/static/images/readme-img/desktop-index.png)
+
+Full Post page
+![Full post](/static/images/readme-img/desktop-full-post.png)
+
+History page
+![History](/static/images/readme-img/desktop-history.png)
+
+About page
+![About](/static/images/readme-img/desktop-about.png)
 
 ### Mobile Results
 
 The site showed good scores.
 
-![Home](/static/)
-![Full post](/static/)
-![History](/static/)
-![About](/static/)
+Home page
+![Home](/static/images/readme-img/mobile-index.png)
+
+Full Post page
+![Full post](/static/images/readme-img/mobile-full-post.png)
+
+History page
+![History](/static/images/readme-img/mobile-history.png)
+
+About page
+![About](/static/images/readme-img/mobile-about.png)
 
 ### Manuel Testing
 
