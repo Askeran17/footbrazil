@@ -2,9 +2,10 @@ from django.contrib import admin
 from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
-# Register your models here.
+
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
+    """ Admin class to add post from admin panel """
     list_display = ('title', 'slug',)
     search_fields = ['title']
     prepopulated_fields = {'slug': ('title',)}
@@ -12,3 +13,4 @@ class PostAdmin(SummernoteModelAdmin):
 
 
 admin.site.register(Comment)
+""" to manage comments from admin panel """

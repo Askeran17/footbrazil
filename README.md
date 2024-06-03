@@ -124,7 +124,7 @@ HTML, CSS, JavaScript, Python, Django
 
 * [Bootstrap](https://getbootstrap.com/) - To create the front-end design.
 
-* [Github](https://github.com/) - To save and store the files for the website.
+* [GitHub](https://github.com/) - To save and store the files for the website.
 
 * [GitPod](https://gitpod.io/) - To use as IDE to commit and push the project to GitHub.
 
@@ -143,6 +143,7 @@ HTML, CSS, JavaScript, Python, Django
 * [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
 
 * [Emojipedia](https://emojipedia.org/) - Emoji for history timeline.
+
 
 ## Testing
 
@@ -254,15 +255,20 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 - PYTHON
   - No errors were returned when passing through the PEP8 Validator 
 
-  ![admin.py](/static/)
-  
-  ![models.py](/static/)
+- Admin.py
+  ![admin.py](/static/images/readme-img/admin-py.png)
 
-  ![views.py](/static/)
+- Models.py
+  ![models.py](/static/images/readme-img/models-py.png)
 
-  ![urls.py](/static/)
+- Views.py
+  ![views.py](/static/images/readme-img/views-py.png)
 
-  ![forms.py](/static/)
+- Urls.py
+  ![urls.py](/static/images/readme-img/urls-py.png)
+
+- Forms.py
+  ![forms.py](/static/images/readme-img/forms-py.png)
   
 
 ### Unfixed Bugs
@@ -304,7 +310,7 @@ I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie pro
 
 - All content for the site was written by myself.
 
-- The icons was taken from Font Awesome [Font Awesome](https://fontawesome.com/)
+- The icons was taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
