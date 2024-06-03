@@ -2,7 +2,6 @@
 {% load crispy_forms_tags %}
 
 {% load i18n %}
-{% load account socialaccount %}
 {% load static %}
 
 {% block title %}
@@ -20,24 +19,8 @@ Sign In / {{site.name}}
       <p class="lead">{% blocktrans with site.name as site_name %}
         Not yet registered? <a href="{{ signup_url }}">Sign up</a> for a {{ site_name }} account.{% endblocktrans %}</p>
 
-      {% get_providers as socialaccount_providers %}
-      
-      {% if socialaccount_providers %}
-      
-      <div class="socialaccount_ballot">
-      
-          <!-- list of oauth login providers -->
-          {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-
-      <hr>      
-      </div>
-      
-      {% include "socialaccount/snippets/login_extra.html" %}
-      
-      {% else %}
       <p>{% blocktrans %}If you have not created an account yet, then please
       <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-      {% endif %}
       
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
