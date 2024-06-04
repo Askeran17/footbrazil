@@ -3,10 +3,12 @@ from django.contrib.auth.mixins import (
     LoginRequiredMixin,
     UserPassesTestMixin,
 )
+from django.urls import reverse, reverse_lazy
 from django.contrib import messages
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .forms import CommentForm, AddPostForm
 from .models import Post, Comment
+
 
 
 # App views
@@ -125,3 +127,18 @@ class AddPostView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
             new_post = self.form
             messages.add_message(request, messages.ERROR, "Error adding post")
         return redirect('home')
+
+
+class EditPost(UpdateView):
+    model = Post
+    template_name = 'portal/edit_post.html'
+    fields = (
+        'title', 'slug', 'featured_image', 'description', 'summary', 'sponsor',
+        'has_sponsor')
+    success_url = reverse_lazy('home')
+
+
+class DeletePost(DeleteView):
+    model = Post
+    template_name = 'portal/delete_post.html'
+    success_url = reverse_lazy('home')

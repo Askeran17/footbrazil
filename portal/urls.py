@@ -5,6 +5,11 @@ from . import views
 urlpatterns = [
     path("", views.PostView.as_view(), name='home'),
     path("add_post/", views.AddPostView.as_view(), name='add_post'),
+    path(
+        'post/edit_post/<int:pk>', views.EditPost.as_view(), name='edit_post'),
+    path(
+        'post/<int:pk>/delete_post', views.DeletePost.as_view(),
+        name='delete_post'),
     path("history/", views.history, name='history'),
     path("about/", views.about, name='about'),
     path("accounts/", include("allauth.urls")),

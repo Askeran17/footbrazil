@@ -262,6 +262,34 @@ right: 0;
     color: rgb(222, 146, 168);
 }
 
+/* Edit/Delete function */
+
+.edit-delete {
+    
+}
+.press-edit-delete {
+    padding: 10px 10px;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #353538;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+    position: relative;
+    top: -7px;
+  }
+  
+  .press-edit-delete:hover {background-color: #494f57}
+  
+  .press-edit-delete:active {
+    background-color: #d6d8dd;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 /* Button link navbar */
 .nav { 
     margin-left: auto; 
@@ -479,6 +507,10 @@ right: 0;
         position: relative;
         left: 175px;
         }
+    
+    .edit-delete {
+        margin-top: 12px;
+    }
 
 }
 
@@ -530,6 +562,10 @@ right: 0;
     width: 50%;
     position: relative;
     left: 230px;
+    }
+
+    .edit-delete {
+        margin-bottom: 1px;
     }
 
 }
