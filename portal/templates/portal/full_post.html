@@ -27,7 +27,7 @@
     <div class="col card mb-4 mt-3 left top">
       <div class="card-body full-post-text">
         <div class="edit-delete"> 
-          {% if user.is_authenticated %}
+          {% if user.is_superuser %}
           <span>
             <a href="{% url 'edit_post' post.pk %}" class="post-link press-edit-delete">Edit</a>
 

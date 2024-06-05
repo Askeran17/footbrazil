@@ -11,7 +11,7 @@
         </div>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            {{ form|crispy }}
+            {{ form | crispy }}
             <button class="btn btn-primary" type="submit">Update</button>
         </form>
         <br>
