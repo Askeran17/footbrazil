@@ -9,7 +9,7 @@ Sign Up / {{site.name}}
 {% endblock %}
 
 {% block content %}
-<div class="container-main-content p-4">
+<div class="container-content-main p-4">
 
   <div class="row full-post-text">
     <div class="col-lg-6">
@@ -18,13 +18,13 @@ Sign Up / {{site.name}}
 
 
 
-<p class="lead">With an account you can bookmark your favourite resources and add new resources to the directory.</p>
+<p class="lead">With an account, you will be able to add comments to our posts</p>
 
       <h5>Create a new account here:</h5>
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
-  {{ form|crispy }}
+  {{ form | crispy }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
