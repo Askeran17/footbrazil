@@ -206,12 +206,14 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 The site showed good scores.
 
+<br>
+
 Home page
 <br>
 
 ![Home](/static/images/readme-img/desktop-index.png)
 
-Full Post page
+Detailed Post page
 <br>
 
 ![Full post](/static/images/readme-img/desktop-full-post.png)
@@ -230,16 +232,26 @@ About page
 
 The site showed good scores.
 
+<br>
+
 Home page
+<br>
+
 ![Home](/static/images/readme-img/mobile-index.png)
 
 Detailed Post page
+<br>
+
 ![Full post](/static/images/readme-img/mobile-full-post.png)
 
 History page
+<br>
+
 ![History](/static/images/readme-img/mobile-history.png)
 
 About page
+<br>
+
 ![About](/static/images/readme-img/mobile-about.png)
 
 ### Manuel Testing
@@ -323,10 +335,10 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffootbrazil-a7d96ef49755.herokuapp.com%2F)
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/)
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Ffootbrazil-a7d96ef49755.herokuapp.com%2F&usermedium=all&vextwarning=&warning=1)
 
 - JAVASCRIPT
   - No errors were returned when passing through the official [JSHint validator](https://jshint.com/)

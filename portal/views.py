@@ -10,7 +10,6 @@ from .forms import CommentForm, AddPostForm
 from .models import Post, Comment
 
 
-
 # App views
 class PostView(CreateView):
     '''show posts'''
@@ -101,7 +100,7 @@ def comment_delete(request, slug, comment_id):
 
 
 class AddPostView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
-    '''add post from the website itself'''
+    '''admin can add post from the website itself'''
     model = Post
     template_name = 'portal/add_post.html'
     form = AddPostForm
@@ -130,6 +129,7 @@ class AddPostView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
 
 
 class EditPost(UpdateView):
+    '''admin can edit post from the website itself'''
     model = Post
     template_name = 'portal/edit_post.html'
     fields = (
@@ -139,6 +139,7 @@ class EditPost(UpdateView):
 
 
 class DeletePost(DeleteView):
+    '''admin can delete post from the website itself'''
     model = Post
     template_name = 'portal/delete_post.html'
     success_url = reverse_lazy('home')
