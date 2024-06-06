@@ -291,7 +291,7 @@ Here is unfixed bugs...
 
 ### Local Development
 
-Deployed using Heroku.
+Deployed using Heroku..
 
 1. Log in/sign up to Heroku.
 2. Go to your Heroku App and click on "Deploy".
