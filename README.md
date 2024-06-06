@@ -22,7 +22,7 @@
   - [Agile Methodology](#agile-methodology)
   - [Design](#design)
     - [Wireframes](#wireframes)
-    - [Database Schema](#database-schema)
+    - [Database](#database)
 - [Features](#features)
     - [Existing Features](#existing-features)
 - [Technologies Used](#technologies-used)
@@ -98,11 +98,46 @@ Here is an example:
 ### Wireframes
 I used program "Balsamiq Wireframes" to draw a page layout.
 
-![image](/static/)
+Home page
+![image](/static/images/readme-img/wireframe-home.png)
 
-### Database Schema
-The project uses the relational database PostgreSQL to store the data.
+History page
+![image](/static/images/readme-img/wireframe-history.png)
 
+About page
+![image](/static/images/readme-img/wireframe-about.png)
+
+### Database
+The project uses the relational database PostgreSQL to store the data. I used PostgreSQL because it is considered one of the recommended databases on the Heroku platform.
+
+**Post model:**
+
+The model consists of the following parts:
+
+- [x] **title**: models.CharField(max_length=300, unique=True) - Indicates the title of the post with 300 characters length
+- [x] **slug**: models.SlugField(max_length=300, unique=True) - automatically creates a 300-character address bar path based on the post title
+- [x] **featured_image**: CloudinaryField('image', default='', blank=True) - load images to post from Cloudinary
+- [x] **description**: models.TextField(default='') - detailed description of the post
+- [x] **summary**: models.TextField(blank=True) - short description of the post
+- [x] **sponsor**: models.CharField(default='Embratel', max_length=100) - by default, posts are set to sponsor Embratel
+- [x] **has_sponsor**: models.BooleanField(default=False) - the ability to indicate or not indicate a sponsor in a post
+- [x] **status**: models.IntegerField(choices=STATUS, default=0) - indicates the status of the post, published or in draft
+- [x] **author**: models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="blog_posts"
+    ) - indicates who the author of the post is, and I set up the site so that only the admin can add posts
+- [x] **date**: models.DateField('Publication date', default=timezone.now) - post publication date
+
+**Comment model:**
+
+The model consists of the following parts:
+
+- [x] **post**: models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments") - indicates that a comment will be attached to the post
+- [x] **author**: models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter") - indicates who is the author of the comment on the post
+- [x] **text_comments**: models.TextField('Texts field', max_length=2000) - field for writing a comment with a maximum length of 2000 characters
+- [x] **approved**: models.BooleanField(default=False) - a comment must first be approved by an admin before it can be published, all registered users can leave comments
+- [x] **created_on**: models.DateTimeField(auto_now_add=True) - comment publication date
 
 ## Features
 
