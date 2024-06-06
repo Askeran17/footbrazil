@@ -285,7 +285,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 ### Unfixed Bugs
 
-Here is unfixed bug
+
 
 ## Deployment
 
