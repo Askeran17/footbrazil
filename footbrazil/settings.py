@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on (i.e True) in production!
-DEBUG = os.environ.get("DEV_PRODUCTION", False)
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-askeran17-footbrazil-g5jsrrxqmly.ws-eu114.gitpod.io','.herokuapp.com']
 
@@ -95,15 +95,18 @@ WSGI_APPLICATION = 'footbrazil.wsgi.application'
 
 
 # Database
-if "DATABASE_URL" in os. environ:
-    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))} 
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+# }
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
         
 
 CSRF_TRUSTED_ORIGINS = [
