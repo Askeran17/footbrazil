@@ -285,13 +285,13 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 ### Unfixed Bugs
 
-Here is unfixed bugs...
+Here is unfixed bug
 
 ## Deployment
 
 ### Local Development
 
-Deployed using Heroku..
+Deployed using Heroku
 
 1. Log in/sign up to Heroku.
 2. Go to your Heroku App and click on "Deploy".
