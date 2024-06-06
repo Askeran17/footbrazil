@@ -155,6 +155,53 @@ The model consists of the following parts:
 
 ### Existing Features
 
+__Header__
+
+- The header has an adaptive navigation bar on the right. There are five links there for unregistered users: home, history, about, register and login. The visitor can easily navigate through these links thanks to the responsive bar. Also, in the mobile or medium screen extension version, there will be a “hamburger” icon on the right side of the adaptive panel, which means that the same links are hidden behind it. This is very convenient and allows you to take up less page space.
+
+![Navbar Desktop](/static/images/readme-img/nav-menu-desktop-visitor.png)
+![Navbar Mobile](/static/images/readme-img/nav-menu-mobile-visitor.png)
+
+- For a registered user, the navbar will look like this:
+
+![Navbar Reg.User](/static/images/readme-img/nav-menu-reg-user.png)
+
+- For admin, the navbar will look like this:
+
+![Navbar Superuser](/static/images/readme-img/nav-menu-superuser.png)
+
+- On the left side of navbar there is a logo that can be clicked and it will return the visitor to the main page.
+
+- When user is logged in, it appears message on the header:
+
+![User logged in](/static/images/readme-img/message-sign-in.png)
+
+- When user is logged in, it appears message on the header:
+
+![User logged out](/static/images/readme-img/message-sign-out.png)
+
+__Main content__
+
+- On the first page the visitor can see a large image of brazilian football stars: Ronaldinho, Neymar, Ronaldo, Romario and Pele and welcome text with button "Go to posts".
+
+<br>
+
+![Go To Posts Button](/static/images/readme-img/go-to-posts-button.png)
+
+![Large image Brazilian Football Stars](/static/images/readme-img/large-image-brazil-stars.png)
+
+- Under the image user will find a short description by brazilian football national team. 
+
+- Under short description user will find six posts of written about participian by brazilian national team at the World Cups on 1970, 1982, 1994, 2002, 2014 and 2022. These world cups was choosen to show for visitors how succesfully and unsuccesfully was brazilian team in those cups. User can go these post either to click on button "Go to posts" placed on large image in header or just by scrolling down.
+
+![Six Posts](/static/images/readme-img/six-posts.png)
+
+__Footer__
+
+- In the footer I have placed a link to Facebook, Instagram, Twitter and YouTube. It looks beautiful with the bootstraps function. The link opens in a separate tab and the visitor is taken to socialmedia he choose, while the site remains open. It is very comfortable. And above links I placed copyright.
+
+![Footer](/static/images/readme-img/footer.png)
+
 ## Technologies Used
 
 In the beginning I did all the work in Codeanywhere, but after I switched to GitPod platform.

@@ -262,6 +262,10 @@ right: 0;
     color: rgb(222, 146, 168);
 }
 
+.sponsor {
+	color: lightgray;
+}
+
 /* Edit/Delete function */
 .press-edit-delete {
     padding: 10px 10px;

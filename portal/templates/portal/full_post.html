@@ -40,8 +40,9 @@
         <div class="card-text">
           {{ post.description | safe }}
         </div>
+        <br>
         {% if post.has_sponsor %}
-        <p class="post-subtitle"> Sponsored by:
+        <p class="sponsor"> Sponsored by:
           {{ post.sponsor}}
         </p>
         {% endif %}
