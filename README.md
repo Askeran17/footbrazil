@@ -215,6 +215,18 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 | Image uploading from add post page | Opportunity to have a field to upload image to post | Image appears without errors | PASS |
 | Sponsor appears | Opportunity to choose sponsor for post | Сheck the box below the post and after post creating it will appear sponsors name without errors | PASS |
 
+#### Edit post page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Admin can edit post from website itself | Access to the edit post page after clicked on button "edit" from post | Being able to update the fields, send it and post will be updatet on homepage directly | PASS |
+
+#### Delete post page
+
+| Testing  | Steps | Expected Result | Grade |  
+| - | - | - | - |
+| Admin can delete post from website itself | Access to the delete post page after clicked on button "delete" from post | Being able to delete post directly | PASS |
+
 #### History page
 
 | Testing  | Steps | Expected Result | Grade |  
@@ -246,7 +258,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 | - | - | - | - |
 | Navbars link testing | Each link will be working correctly | The user can open any link to view the web page | PASS |
 
-#### Admin
+#### Admin panel
 
 | Testing  | Steps | Expected Outcome | Grade |  
 | - | - | - | - |
@@ -285,7 +297,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 ### Unfixed Bugs
 
-Unfix
+
 
 ## Deployment
 
