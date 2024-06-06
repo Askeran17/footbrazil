@@ -99,12 +99,24 @@ Here is an example:
 I used program "Balsamiq Wireframes" to draw a page layout.
 
 Home page
+<br>
+
 ![image](/static/images/readme-img/wireframe-home.png)
 
+Detailed post page
+<br>
+
+![image](/static/images/readme-img/wireframe-post-detailed.png)
+
+
 History page
+<br>
+
 ![image](/static/images/readme-img/wireframe-history.png)
 
 About page
+<br> 
+
 ![image](/static/images/readme-img/wireframe-about.png)
 
 ### Database
@@ -195,15 +207,23 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 The site showed good scores.
 
 Home page
+<br>
+
 ![Home](/static/images/readme-img/desktop-index.png)
 
 Full Post page
+<br>
+
 ![Full post](/static/images/readme-img/desktop-full-post.png)
 
 History page
+<br>
+
 ![History](/static/images/readme-img/desktop-history.png)
 
 About page
+<br>
+
 ![About](/static/images/readme-img/desktop-about.png)
 
 ### Mobile Results
@@ -213,7 +233,7 @@ The site showed good scores.
 Home page
 ![Home](/static/images/readme-img/mobile-index.png)
 
-Full Post page
+Detailed Post page
 ![Full post](/static/images/readme-img/mobile-full-post.png)
 
 History page
