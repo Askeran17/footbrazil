@@ -311,7 +311,7 @@ Fork the repository:
 
 1. You have to log in/sign up to GitHub.
 2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
-3. Click the "Fork" button in the top right corner.
+3. Click the "Fork" button in the top right corner..
 
 #### How to Clone
 
