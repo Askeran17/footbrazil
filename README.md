@@ -192,7 +192,7 @@ __Main content__
 
 - Under the image user will find a short description by brazilian football national team. 
 
-- Under short description user will find six posts of written about participian by brazilian national team at the World Cups on 1970, 1982, 1994, 2002, 2014 and 2022. These world cups was choosen to show for visitors how succesfully and unsuccesfully was brazilian team in those cups. User can go these post either to click on button "Go to posts" placed on large image in header or just by scrolling down.
+- Under short description user will find six posts of written about participian by brazilian national team at the World Cups on 1970, 1982, 1994, 2002, 2014 and 2022. These world cups was choosen to show for visitors how succesfully and unsuccesfully was brazilian team in those cups. User can go these post either to click on button "Go to posts" placed on large image in header or just by scrolling down.       
 
 ![Six Posts](/static/images/readme-img/six-posts.png)
 
@@ -217,7 +217,7 @@ __History page__
 - On this page I have displayed on the left side the statistics of the performances of the Brazilian national team at the World Championships, and on the left side the history of performances at the World Championships
 ![History Page](/static/images/readme-img/history-page.png)
 
-- And below the statistics is progressbar that shows the total progress from performances at the world championships
+- And below the statistics is progressbar that shows the total progress from performances at the world cups.      
 ![Progress Bar](/static/images/readme-img/progress-bar.png)
 
 __About page__
