@@ -2,7 +2,7 @@
 
 ## Сontents
 
-* [introduction](#introduction)
+* [Introduction](#introduction)
     * [Lighthouse](#lighthouse)
 * [Manual Testing](#manual-testing)
 * [Validator Testing](#validator-testing)

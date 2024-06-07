@@ -202,6 +202,59 @@ __Footer__
 
 ![Footer](/static/images/readme-img/footer.png)
 
+__Detailed post page__
+
+- At the top of the page there is a photo related to the post. On the left side is the author of the post (admin) and the date of publication.
+
+- Also in front of the text there are two buttons for the admin: “Edit post” and “Delete post”, and then there is the text of the post itself.
+
+- After the text there is an indication of the sponsor (optional if a sponsor has been added), and then there is a field for comments from registered users and a button to send a comment
+![Detailed Post Page](/static/images/readme-img/detailed-post-page.png)
+![Comments Field](/static/images/readme-img/comments-field.png)
+
+__History page__
+
+- 
+![Image](static)
+
+- 
+![Image](static)
+
+__About page__
+
+- 
+![Image](static)
+
+__Add post page__
+
+- 
+![Image](static)
+
+__Edit post page__
+
+- 
+![Image](static)
+
+__Delete post page__
+
+- 
+![Image](static)
+
+__Sign up page__
+
+- 
+![Image](static)
+
+__Sign in page__
+
+- 
+![Image](static)
+
+__Sign out page__
+
+- 
+![Image](static)
+
 ## Technologies Used
 
 In the beginning I did all the work in Codeanywhere, but after I switched to GitPod platform.
@@ -242,30 +295,33 @@ To view testing go here [TESTING.md](TESTING.md)
 
 ## Deployment
 
-### Local Development
+The project was deployed to Heroku in the following manner:
 
-Deployed using Heroku
-
-1. Log in/sign up to Heroku.
-2. Go to your Heroku App and click on "Deploy".
-3. At section "Deployment method", click "GitHub" and connect your account with Heroku.
-4. When you're connected, search for the project you wanna connect the app to and click on it.
-5. Click "Deploy Branch".
-6. Your app will now be deployed to GitHub and when it's done you can click "Open App".
+1. Firstly you need to sign up on the Heroku website.
+2. There after choose new and "create New App", give the app a name, choose a region: Europe
+3. Go to deploy, see Deployment Method and select GitHub.
+4. At section "Deployment method", click "GitHub" and connect your account with Heroku.
+4. To connect your Heroku app to your code in a Github repository, you need to enter the name of your repository and click on the "Search" button. After that click on button “Connect” when it appears.
+5. Go to manual deploy, select the branch from which you want to build your application and click to "Deploy Branch".
+6. You have to wait until the app is build. When it wiil be done it will appear an “App was successfully deployed” message and after that you will see a "View" button. When you click on this button you will see your app deployed.
 
 #### How to Fork
-Fork the repository:<br>
-1. Log in/sign up to GitHub.
+
+Fork the repository:
+
+1. You have to log in/sign up to GitHub.
 2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
-3. Click the 'Fork' button in the top right corner.
+3. Click the "Fork" button in the top right corner.
 
 #### How to Clone
-Clone the repository:<br>
-1. Log in/sign up to GitHub.
+
+Clone the repository:
+
+1. You have to log in/sign up to GitHub.
 2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
-3. Click the code button, select which one you want to clone with (HTTPS, SSH or GitHub CLI) and copy the link shown.
-4. Open the terminal in a code editor and change the current working directory to a location of your choice to use for the cloned directory.
-5. Type 'git clone' in the terminal, paste the link that you copied in step 3 and then press enter.
+3. To clone the repository using HTTPS, under "HTTPS", click to copy button. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click to copy button. To clone a repository using GitHub CLI, click GitHub CLI, then click to copy button.
+4. Open terminal, change the current working directory to the location where you want the cloned directory.
+5. Type git clone, and then paste the URL you copied earlier. Press Enter to create your local clone.
 
 
 ## Credits
