@@ -443,7 +443,7 @@ Clone the repository:<br>
 
 ## Credits
 
-I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie project at the Code Institute. So I partially took the code from each project.
+I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie project at the Code Institute.
 
 ### Content 
 
