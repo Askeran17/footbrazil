@@ -255,6 +255,11 @@ __Sign out page__
 - The sign out page looks like this: with the possibility of two options, exit or stay on the site
 ![Sign Out Page](/static/images/readme-img/sign-out-page.png)
 
+__Error 404 page__
+
+- If the user incorrectly specified the page path or clicked on a non-existent page, then he is taken to a 404 page. This page contains a link to return to the main page
+![404 Page](/static/images/readme-img/404-page.png)
+
 ## Technologies Used
 
 In the beginning I did all the work in Codeanywhere, but after I switched to GitPod platform.
@@ -311,7 +316,7 @@ Fork the repository:
 
 1. You have to log in/sign up to GitHub.
 2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
-3. Click the "Fork" button in the top right corner..
+3. Click the "Fork" button in the top right corner.
 
 #### How to Clone
 
