@@ -1,4 +1,14 @@
-## Testing
+# Testing
+
+## Сontents
+
+* [introduction](#introduction)
+    * [Lighthouse](#lighthouse)
+* [Manual Testing](#manual-testing)
+* [Validator Testing](#validator-testing)
+* [Bugs](#bugs)
+
+## Introduction
 
 Throughout the development of the site, I used Google's developer tools to identify and fix any problems along the way.
 
@@ -62,7 +72,7 @@ About page
 
 ![About](/static/images/readme-img/mobile-about.png)
 
-### Manuel Testing
+## Manual Testing
 
 I conducted manual testing to ensure the effectiveness and usability of the FootBrazil website.
 
@@ -139,8 +149,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 | - | - | - | - |
 | Superusers features | Superuser will be able to create, delete and update | Superuser can create, delete and update content | PASS |
 
-
-### Validator Testing 
+## Validator Testing 
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffootbrazil-a7d96ef49755.herokuapp.com%2F)
@@ -168,3 +177,6 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 - Forms.py
   ![forms.py](/static/images/readme-img/forms-py.png)
+
+
+## Unfixed Bugs
