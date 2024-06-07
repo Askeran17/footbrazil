@@ -214,46 +214,46 @@ __Detailed post page__
 
 __History page__
 
-- 
-![Image](static)
+- On this page I have displayed on the left side the statistics of the performances of the Brazilian national team at the World Championships, and on the left side the history of performances at the World Championships
+![History Page](/static/images/readme-img/history-page.png)
 
-- 
-![Image](static)
+- And below the statistics is progressbar that shows the total progress from performances at the world championships
+![Progress Bar](/static/images/readme-img/progress-bar.png)
 
 __About page__
 
-- 
-![Image](static)
+- This page contains brief information about the company, as well as what the company does
+![About Page](/static/images/readme-img/about-page.png)
 
 __Add post page__
 
-- 
-![Image](static)
+- On this page, the admin can create posts without going into the admin panel. There are all the necessary fields here, such as: post title, the ability to add a image, description, short description of the post, the ability to add a sponsor and the add post button
+![Add Post Page](/static/images/readme-img/add-post-page.png)
 
 __Edit post page__
 
-- 
-![Image](static)
+- On this page, the admin can create posts without going into the admin panel. There are all the necessary fields here, such as: post title, add URL path, ability to add/remove pictures, description, short description of post, ability to add sponsor and update post button
+![Edit Post Page](/static/images/readme-img/edit-post-page.png)
 
 __Delete post page__
 
-- 
-![Image](static)
+- When the admin decides to delete a post, he can do this directly from the site by clicking on the delete button located at the beginning of the post. Next comes a transition to a page where confirmation is requested to delete the page. On this page the admin can delete a post.
+![Delete Post Page](/static/images/readme-img/delete-post-page.png)
 
 __Sign up page__
 
-- 
-![Image](static)
+- On this page you can register your account by filling out the username, e-mail (optional) and password fields. Then click on the sign up button to create account
+![Sign Up Page](/static/images/readme-img/register-account.png)
 
 __Sign in page__
 
-- 
-![Image](static)
+- To log into your account on the site, you need to go to the login page, where you should fill in the username and password fields and click on the sign in button
+![Sign In Page](/static/images/readme-img/sign-in-page.png)
 
 __Sign out page__
 
-- 
-![Image](static)
+- The sign out page looks like this: with the possibility of two options, exit or stay on the site
+![Sign Out Page](/static/images/readme-img/sign-out-page.png)
 
 ## Technologies Used
 
@@ -322,7 +322,6 @@ Clone the repository:
 3. To clone the repository using HTTPS, under "HTTPS", click to copy button. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click to copy button. To clone a repository using GitHub CLI, click GitHub CLI, then click to copy button.
 4. Open terminal, change the current working directory to the location where you want the cloned directory.
 5. Type git clone, and then paste the URL you copied earlier. Press Enter to create your local clone.
-
 
 ## Credits
 
