@@ -270,6 +270,13 @@ body {
 }
 
 /* Edit/Delete post */
+.edit-delete {
+    position: relative;
+    right: -222px;
+    bottom: 35px;
+}
+
+
 .press-edit-delete {
     padding: 10px 10px;
     font-size: 11px;
@@ -277,16 +284,15 @@ body {
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #353538;
+    background-color: #73cbad5e;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 2px #999;
     position: relative;
     top: -7px;
 }
 
 .press-edit-delete:hover {
-    background-color: #494f57
+    background-color: #54917d5e;
 }
 
 .press-edit-delete:active {
@@ -470,7 +476,7 @@ body {
 @media only screen and (min-width: 335px) {
 
     .masthead {
-        margin-bottom: -100px;
+        height: 200px;
     }
 
     .masthead-home {
@@ -492,7 +498,7 @@ body {
 @media screen and (min-width: 768px) {
 
     .masthead {
-        margin-bottom: -150px;
+        
     }
 
     .masthead-home {
@@ -552,10 +558,6 @@ body {
 /* Large devices (laptops and desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {
 
-    .masthead {
-        margin-bottom: -10px;
-    }
-
     .masthead-home {
         margin-top: 0px;
         overflow: hidden;
@@ -610,6 +612,10 @@ body {
 /* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
+    .masthead {
+        height: 230px;    
+    }
+
     .p-text-history {
         font-size: 1rem;
     }
@@ -631,6 +637,11 @@ body {
 
     .footer {
         height: auto;
+    }
+
+    .edit-delete {
+        bottom: 34px;
+        position: relative;
     }
 }
 

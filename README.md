@@ -212,6 +212,9 @@ __Detailed post page__
 ![Detailed Post Page](/static/images/readme-img/detailed-post-page.png)
 ![Comments Field](/static/images/readme-img/comments-field.png)
 
+- When a user has left a comment, the comment awaits admin approval
+![Comment Approval](/static/images/readme-img/comment-approval.png)
+
 __History page__
 
 - On this page I have displayed on the left side the statistics of the performances of the Brazilian national team at the World Championships, and on the left side the history of performances at the World Championships
