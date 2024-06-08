@@ -317,7 +317,7 @@ The project was deployed to Heroku in the following manner:
 
 Fork the repository:
 
-1. You have to log in/sign up to GitHub.
+1. You have to log in/register on GitHub.
 2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
 3. Click the "Fork" button in the top right corner.
 
@@ -325,7 +325,7 @@ Fork the repository:
 
 Clone the repository:
 
-1. You have to log in/sign up to GitHub.
+1. You have to log in/register on GitHub.
 2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
 3. To clone the repository using HTTPS, under "HTTPS", click to copy button. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click to copy button. To clone a repository using GitHub CLI, click GitHub CLI, then click to copy button.
 4. Open terminal, change the current working directory to the location where you want the cloned directory.
