@@ -4,8 +4,8 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}
-Sign Up | {{site.name}}
+{% block head_title %}
+{% trans "Sign Up" %}
 {% endblock %}
 
 {% block content %}
@@ -16,8 +16,6 @@ Sign Up | {{site.name}}
 
 <h1>{% trans "Sign Up" %}</h1>
 
-
-
 <p class="lead">With an account, you will be able to add comments to our posts</p>
 
       <h4>Register your account here:</h4>
@@ -26,7 +24,7 @@ Sign Up | {{site.name}}
   {% csrf_token %}
   {{ form | crispy }}
   {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
   {% endif %}
   <button class="btn btn-dark" type="submit">{% trans "Sign Up" %}</button>
 </form>

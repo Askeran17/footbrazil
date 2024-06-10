@@ -7,12 +7,11 @@
 * [Manual Testing](#manual-testing)
 * [Validator Testing](#validator-testing)
 * [Bugs](#bugs)
+    * [Unfixed Bugs](#unfixed-bugs)
 
 ## Introduction
 
 Throughout the development of the site, I used Google's developer tools to identify and fix any problems along the way.
-
-If something didn't work correctly, I also used Google's developer tools to tweak and fix the problem.
 
 I've thoroughly tested each page using Google Chrome's developer tools to ensure each page is responsive on a variety of screen sizes and devices.
 
@@ -78,7 +77,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 #### Homepage
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Visitor can view home page | Access the main page of the website | Being able to open and browse without errors | PASS |
 | Visitor can click on all button in homepage | When hover over the button, the button darkens a little| Buttons works without errors | PASS |
@@ -86,7 +85,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 #### Detailed post page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Visitor can view detailed post page | Access to the post page after clicked on button "click to read" from homepage | Being able read text and watch on video without errors | PASS |
 | Registered user can leave a comment under post | Log in and leave a comment | Leave a comment without errors | PASS |
@@ -94,7 +93,7 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 #### Add post page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Admin can add post from website itself | Access to the add post page after clicked on button "Add post" from navbar | Being able to fill out the fields, send it and post will be added on homepage directly | PASS |
 | Image uploading from add post page | Opportunity to have a field to upload image to post | Image appears without errors | PASS |
@@ -102,50 +101,50 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
 
 #### Edit post page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Admin can edit post from website itself | Access to the edit post page after clicked on button "edit" from post | Being able to update the fields, send it and post will be updatet on homepage directly | PASS |
 
 #### Delete post page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Admin can delete post from website itself | Access to the delete post page after clicked on button "delete" from post | Being able to delete post directly | PASS |
 
 #### History page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Visitor can view history page | Access to the history page after clicked on button "History" from navbar | Being able read text without errors | PASS |
 
 #### About page
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Visitor can view about page | Access to the about page after clicked on button "About" from navbar | Being able read text without errors | PASS |
 
 #### Registration 
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | User signup page | Click on button "Register" from navbar | Visitor is directed to the signup page | PASS |
 | Fill in the registration form with valid and unique user information | Click on button "Sign up" | Success full registration | PASS |
 
 #### Footer
 
-| Testing  | Steps | Expected Result | Grade |  
+| Testing  | Action | Expected Result | Grade |  
 | - | - | - | - |
 | Social media link opens with new tab | Click on link "Facebook, Twitter, Instagram or Youtube" from footer | Visitor is directed to the new window for selected socialmedia | PASS |
 
 #### Navbar
 
-| Testing  | Steps | Expected Outcome | Grade |  
+| Testing  | Action | Expected Outcome | Grade |  
 | - | - | - | - |
 | Navbars link testing | Each link will be working correctly | The user can open any link to view the web page | PASS |
 
 #### Admin panel
 
-| Testing  | Steps | Expected Outcome | Grade |  
+| Testing  | Action | Expected Outcome | Grade |  
 | - | - | - | - |
 | Superusers features | Superuser will be able to create, delete and update | Superuser can create, delete and update content | PASS |
 
@@ -179,4 +178,8 @@ I conducted manual testing to ensure the effectiveness and usability of the Foot
   ![forms.py](/static/images/readme-img/forms-py.png)
 
 
-## Unfixed Bugs
+## Bugs
+
+### Unfixed Bugs
+
+I wanted to add to the site the ability for the admin to delete user comments without going into the admin panel, but I didn’t succeed, I know that I had to add something to the detailed post pages template for this to work, but I still didn’t fully understand how to do it.

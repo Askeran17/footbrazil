@@ -8,7 +8,7 @@
 
 ### Repository
 
-- Go to the repository for this project, [Repository-Footbrazil](https://github.com/Askeran17/footbrazil.git)
+- Go to the repository for this project - [Repository-Footbrazil](https://github.com/Askeran17/footbrazil.git)
 
 ---
 
@@ -17,9 +17,9 @@
 - [Overview](#overview)
 - [Adaptability](#adaptability)
 - [User Experience (UX)](#user-experience-ux)
-  - [Project goal](#project-goal)
+  - [Project Goal](#project-goal)
   - [User Stories](#user-stories)
-  - [Agile Methodology](#agile-methodology)
+  - [Agile](#agile)
   - [Design](#design)
     - [Wireframes](#wireframes)
     - [Database](#database)
@@ -30,7 +30,6 @@
   - [Frameworks, Libraries & Programs Used](#frameworks)
 - [Testing](#testing)
 - [Deployment](#deployment)
-  - [Deploy on Heroku](#deploy-on-heroku)
 - [Credits](#credits)
   - [Content](#content)
   - [Media](#media)
@@ -39,7 +38,7 @@
 
 This site is dedicated to the history of Brazilian football, namely the participation of the Brazilian national team in the World Cup. On this site you will find statistics on the performance of the Brazilian national team at the World Championships, a brief historical excursion and review articles on the famous periods of participation of the Brazilian national team at the World Championships where in each post there will be an article, as well as a video review and under these posts each participant will be able to leave a comment and share impressions and memories.
 
-FootBrazil - was developed using HTML, CSS, Javascript and Python (Django).
+Only 6 posts were selected for the site, 4 of which are intended to tell the user about the best performances of the Brazilian national team at the World Cup, namely the 1970, 1982, 1994, 2002 World Cups, as well as 2 more posts dedicated to the two recently held World Cups 2014 and 2022 where the user will be able to compare the past generation of the national team with the current one.
 
 ## Adaptability on a variety of screen sizes
 
@@ -47,18 +46,17 @@ FootBrazil - was developed using HTML, CSS, Javascript and Python (Django).
 
 ## User Experience
 
-### Project goal
+### Project Goal
 
 The purpose of the site is to provide, with the help of web development, visitors the opportunity to easily immerse themselves in the atmosphere of the Brazilian national team and its participation in the World Cup.
 
 ### User Stories
 
+### Agile
 
-### Agile methodology
+The project used a Agile methodology that tracked the process of creating the project. An issue was created for each user story.
 
-This project was developed using the agile methodology. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story.
-
-Visitors can read posts and view video but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments. When user stories were completed, they were moved from the To Do via Progress to Done list.
+Visitors can read posts and view video in posts but not to add a comment under this. Registred users can add a comment under posts. Administrator of site can adding, updating & deleting comments. A project Kanban board was used to track progress, with user stories moved between 'ToDo', 'In Progress' and 'Done' columns as appropriate.
 
 Here is link to Agile [User Stories](https://github.com/users/Askeran17/projects/5/views/1).
 
@@ -192,7 +190,9 @@ __Main content__
 
 - Under the image user will find a short description by brazilian football national team. 
 
-- Under short description user will find six posts of written about participian by brazilian national team at the World Cups on 1970, 1982, 1994, 2002, 2014 and 2022. These world cups was choosen to show for visitors how succesfully and unsuccesfully was brazilian team in those cups. User can go these post either to click on button "Go to posts" placed on large image in header or just by scrolling down.       
+- Under short description user will find six posts of written about participian by brazilian national team at the World Cups on 1970, 1982, 1994, 2002, 2014 and 2022. These world cups was choosen to show for visitors how succesfully and unsuccesfully was brazilian team in those cups. User can go these post either to click on button "Go to posts" placed on large image in header or just by scrolling down.
+
+Due to the fact that only 6 posts were selected on the site, for this reason I did not add pagination code to the template
 
 ![Six Posts](/static/images/readme-img/six-posts.png)
 
@@ -208,12 +208,17 @@ __Detailed post page__
 
 - Also in front of the text there are two buttons for the admin: “Edit post” and “Delete post”, and then there is the text of the post itself.
 
-- After the text there is an indication of the sponsor (optional if a sponsor has been added), and then there is a field for comments from registered users and a button to send a comment
+- If a user wants to delete their own comment, he can click on button delete and it appears window with question if user sure to delete own comment
+![Comment Delete](/static/images/readme-img/comment-delete.png)
+
+- After the text in post there is an indication of the sponsor (optional if a sponsor has been added), and then there is a field for comments from registered users and a button to send a comment
 ![Detailed Post Page](/static/images/readme-img/detailed-post-page.png)
 ![Comments Field](/static/images/readme-img/comments-field.png)
 
 - When a user has left a comment, the comment awaits admin approval
 ![Comment Approval](/static/images/readme-img/comment-approval.png)
+
+- I also created 3 fake users to control how comments function works
 
 __History page__
 
@@ -297,11 +302,15 @@ HTML, CSS, JavaScript, Python, Django
 
 * [Emojipedia](https://emojipedia.org/) - Emoji for history timeline.
 
+* [Coolors](https://coolors.co/) - Colours palette.
+
 ## Testing
 
 To view testing go here [TESTING.md](TESTING.md)
 
 ## Deployment
+
+### How to deploy on Heroku
 
 The project was deployed to Heroku in the following manner:
 
@@ -313,17 +322,17 @@ The project was deployed to Heroku in the following manner:
 5. Go to manual deploy, select the branch from which you want to build your application and click to "Deploy Branch".
 6. You have to wait until the app is build. When it wiil be done it will appear an “App was successfully deployed” message and after that you will see a "View" button. When you click on this button you will see your app deployed.
 
-#### How to Fork
+### How to fork
 
-Fork the repository:
+To fork do do the following steps:
 
 1. You have to log in/register on GitHub.
 2. Go to the repository for this project [FootBrazil](https://github.com/Askeran17/footbrazil).
 3. Click the "Fork" button in the top right corner.
 
-#### How to Clone
+### How to clone
 
-Clone the repository:
+To clone do the following steps:
 
 1. You have to log in/register on GitHub.
 2. Go to the repository for this project [Footbrazil](https://github.com/Askeran17/footbrazil).
@@ -333,14 +342,17 @@ Clone the repository:
 
 ## Credits
 
-I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie project at the Code Institute.
+I was inspired by the "I Think Therefore I Blog" and "Flask Framework" Rosie project at the Code Institute. I
+watch YouTube tutorial about how to edit/delete post from website itself (https://www.youtube.com/watch?v=Y1Us5jVT07E&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=17)
+
+As for the site design I also liked how these projects was done: (https://github.com/davidindub/designland) and (https://github.com/Dhvani-intwala/spice-villa). 
 
 ### Content 
 
-- All content for the site was written by myself.
+- Since there is very little detailed information in the English-language segment about the historical moments of the Brazilian national football team, I took information from Russian-language sites (such as, torcida.com.ru) for my posts and history page. And I translated it into English using Google Translate; I know the Russian language well and therefore did not just copy and paste, but checked and corrected inaccurate places in the translation. I used ready-made text from a Russian site, because the historical details needed to be conveyed exactly as they exist. Therefore, I did not invent these texts myself, but had to convey them to the reader exactly in the form in which they exist.
 
 - The icons was taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
-- The images in site I took from open source, i.e. google.
+- The images in site I took from torcida.com.ru and open source, i.e. google.

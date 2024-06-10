@@ -6,27 +6,39 @@
 <!-- Page Header -->
 <header class="masthead-home footbrazil-bg">
     <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 animate__animated animate__bounce text-white welcome-bg">
-                    <h1>Welcome to FootBrazil</h1>
-                    <h2>Feel football atmosphere here</h2>
-        
-                    <div class="go-posts">
-                        <a href="{% url 'home' %}#posts" class="btn-posts">Go to posts</a>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 animate__animated animate__bounce text-white welcome-bg">
+                <h1>Welcome to FootBrazil</h1>
+                <h2>Feel football atmosphere here</h2>
+
+                <div class="go-posts">
+                    <a href="{% url 'home' %}#posts" class="btn-posts">Go to posts</a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <br>
-    <p class="front-page-text">The Brazilian national football team is the only team that has not missed a single final stage of the World Cup. The Brazilians were the first to win titles on three different continents and in three different parts of the world (America, Europe and Asia; North America, South America and Eurasia). The team also won the Confederations Cup four times, a record. In addition, the Brazilians have 9 victories in the America's Cup, the most prestigious team tournament on the continent. According to this indicator, on the continent they are second only to Uruguay and Argentina. The Brazilian national team is the only one who has won the world championship five times. In addition, the Selecao have two sets of silver medals, two bronze medals and one for fourth place in 1974. Since 2002, after their fifth victory at the World Championships, they are called “Pentakampeons” (port. Pentacampeões) - five-time champions. So much has already been written about the World Football Championships, which excite the hearts of fans every four years, that there is no point in “discovering America.” However, our site is not only intended for visitors of a certain age. I think that both adults who have watched more than one World Cup in person or on television, as well as young football fans who have only heard somewhere that such great players as Leonidas da Silva, Arthur Friedenreich, Pele, Garrincha and so on. But these young people may not even know that Brazil is the only country that has represented its football team at all twenty world championships. On this site you will plunge into the history of the victorious World Cup for the Brazilian national team.</p>
+    <p class="front-page-text">The Brazilian national football team is the only team that has not missed a single final
+        stage of the World Cup. The Brazilians were the first to win titles on three different continents and in three
+        different parts of the world (America, Europe and Asia; North America, South America and Eurasia). The team also
+        won the Confederations Cup four times, a record. In addition, the Brazilians have 9 victories in the America's
+        Cup, the most prestigious team tournament on the continent. According to this indicator, on the continent they
+        are second only to Uruguay and Argentina. The Brazilian national team is the only one who has won the world
+        championship five times. In addition, the Seleçao have two sets of silver medals, two bronze medals and one for
+        fourth place in 1974. Since 2002, after their fifth victory at the World Championships, they are called
+        “Pentakampeons” (port. Pentacampeões) - five-time champions. On our website you will find statistics on the
+        performances of the Brazilian national team at the World Cup and a brief overview of these participations, and
+        most importantly, you will plunge into the history of the best selected performances of the team at the World
+        Cup, namely 1970, 1982, 1994, 2002, and also compare with the performances recent years at the 2014 and 2022
+        championships.</p>
     <div class="row">
-        
+
         <!-- Blog Entries Column -->
         <div id="posts" class="col-12 mt-3 left">
             <div class="row">
@@ -35,18 +47,17 @@
                     <div class="card mb-4 text-center">
                         <div class="card-body card-footbrazil">
                             <div class="image-container">
-                                
-                                <img class="card-img-top" src="{{ post.featured_image.url }}"
-                                                                    alt="{{ post.title }}">
-                                
+
+                                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+
                                 <div class="image-flash">
                                 </div>
                             </div>
-                        
-                            
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.summary }}</p>
-                                <a href="{{ post.slug }}" class="post-link bg-press-footbrazil">
+
+
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text">{{ post.summary }}</p>
+                            <a href="{{ post.slug }}" class="post-link bg-press-footbrazil">
                                 Click to read
                             </a>
                         </div>
@@ -55,8 +66,8 @@
                 {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
-                
-                {% endif %}            
+
+                {% endif %}
                 {% endfor %}
 
             </div>

@@ -15,6 +15,7 @@
           {{ post.date}}
         </p>
         <div class="edit-delete">
+          <!-- Manage post -->
           {% if user.is_superuser %}
           <span>
             <a href="{% url 'edit_post' post.pk %}" class="post-link press-edit-delete">Edit</a>
@@ -82,7 +83,7 @@
         {% endfor %}
       </div>
     </div>
-    <!-- Creating New Comments -->
+    <!-- Field for adding comments  -->
     <div class="col-md-4 card mb-4 mt-3">
       <div class="card-body">
         {% if user.is_authenticated %}
