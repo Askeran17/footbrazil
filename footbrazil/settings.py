@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on (i.e True) in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-askeran17-footbrazil-g5jsrrxqmly.ws-eu114.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-askeran17-footbrazil-ssyki954cga.ws-eu120.gitpod.io','.herokuapp.com']
 
 
 # Application definition
@@ -99,13 +99,17 @@ WSGI_APPLICATION = 'footbrazil.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
         
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com",
-    "https://8000-askeran17-footbrazil-g5jsrrxqmly.ws-eu114.gitpod.io"
+    "https://*.gitpod.io"
 ]
 
 # Password validation
