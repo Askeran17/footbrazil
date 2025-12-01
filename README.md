@@ -90,7 +90,7 @@ Here is an example:
 
 ![image](/static/images/readme-img/exo-font.png)
 
-<strong>"Crimson Text"</strong> - this style took just in case, but I didn’t use it
+<strong>"Crimson Text"</strong> - this style took just in case, but I didn’t use it.
 
 
 ### Wireframes
