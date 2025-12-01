@@ -414,7 +414,7 @@ body {
 }
 
 .section-column {
-    padding: 0 43px 43px;
+    padding: 0 30px 30px;
     float: none;
     display: table-cell;
 }
@@ -588,7 +588,7 @@ body {
     }
 
     .info-column {
-        height: 485px;
+        height: 555px;
     }
 
     .footer {
