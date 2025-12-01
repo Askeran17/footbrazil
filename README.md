@@ -4,7 +4,7 @@
 
 ### Live Site
 
-- Go to live site - [FootBrazil](https://footbrazil-a7d96ef49755.herokuapp.com/)
+- Go to live site - [FootBrazil](https://footbrazil.onrender.com/)
 
 ### Repository
 
@@ -118,7 +118,7 @@ About page
 ![image](/static/images/readme-img/wireframe-about.png)
 
 ### Database
-The project uses the relational database PostgreSQL to store the data. I used PostgreSQL because it is considered one of the recommended databases on the Heroku platform.
+The project uses the relational database PostgreSQL to store the data. I used PostgreSQL because it is considered one of the recommended databases on the Render platform.
 
 **Post model:**
 
@@ -310,17 +310,27 @@ To view testing go here [TESTING.md](TESTING.md)
 
 ## Deployment
 
-### How to deploy on Heroku
+### How to deploy on Render
 
-The project was deployed to Heroku in the following manner:
+The project was deployed to Render in the following manner:
 
-1. Firstly you need to sign up on the Heroku website.
-2. There after choose new and "create New App", give the app a name, choose a region: Europe
-3. Go to deploy, see Deployment Method and select GitHub.
-4. At section "Deployment method", click "GitHub" and connect your account with Heroku.
-4. To connect your Heroku app to your code in a Github repository, you need to enter the name of your repository and click on the "Search" button. After that click on button “Connect” when it appears.
-5. Go to manual deploy, select the branch from which you want to build your application and click to "Deploy Branch".
-6. You have to wait until the app is build. When it wiil be done it will appear an “App was successfully deployed” message and after that you will see a "View" button. When you click on this button you will see your app deployed.
+1. Firstly you need to sign up on the [Render website](https://render.com/).
+2. Click on "New +" button and select "Web Service".
+3. Connect your GitHub account and select the repository you want to deploy.
+4. Give your web service a name and select the region closest to you.
+5. Set the following settings:
+   - **Environment**: Python
+   - **Build Command**: `pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate`
+   - **Start Command**: `gunicorn footbrazil.wsgi:application`
+6. Add the following environment variables in the "Environment" section:
+   - `SECRET_KEY` - your Django secret key
+   - `CLOUDINARY_URL` - your Cloudinary URL
+   - `DATABASE_URL` - will be automatically added when you create a PostgreSQL database
+   - `DEBUG` - set to `False` for production
+   - `PYTHON_VERSION` - `3.9.6`
+7. Create a PostgreSQL database by clicking "New +" and selecting "PostgreSQL". Connect it to your web service.
+8. Click "Create Web Service" and wait for the deployment to complete.
+9. Once deployed, you will receive a URL where your application is hosted.
 
 ### How to fork
 
